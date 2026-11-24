@@ -1,0 +1,44 @@
+name: thaimart_buyer
+description: "Thaimart Buyer — buyer-side mobile app for the Thaimart marketplace."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.3.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/icons/category/
+    - assets/images/
+    - assets/images/product_detail/
+
+  fonts:
+    - family: SukhumvitTadmai
+      fonts:
+        - asset: assets/fonts/SukhumvitTadmai/SukhumvitTadmai-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/SukhumvitTadmai/SukhumvitTadmai-Text.ttf
+          weight: 400
+        - asset: assets/fonts/SukhumvitTadmai/SukhumvitTadmai-Light.ttf
+          weight: 300
+    # Google Sans (SIL OFL 1.1, from github.com/google/fonts ofl/googlesans):
+    # static 400 and 700 cut from the variable font, Latin + Thai only.
+    - family: GoogleSans
+      fonts:
+        - asset: assets/fonts/GoogleSans/GoogleSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/GoogleSans/GoogleSans-Bold.ttf
+          weight: 700

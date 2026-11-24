@@ -1,0 +1,48 @@
+{
+  "_about": "Thaimart · ส่งงานขึ้น Storybook · ไฟล์ตั้งค่าของโปรเจกต์ (made by the install command only when missing: it never overwrites a filled file). The skill thaimart-storybook reads it. Fill it when the team sends the details; leave a field empty and keep pending true until then.",
+  "_status": "pending: the team's design system, Storybook repo and packages are not ready yet",
+  "repo": {
+    "pending": true,
+    "url": "",
+    "platform": "gitlab",
+    "defaultBranch": "main",
+    "_help": "url: the central Storybook repo (GitLab or GitHub). platform: gitlab or github."
+  },
+  "targets": {
+    "react": {
+      "pending": true,
+      "enabled": true,
+      "storyDir": "src/stories/features/<feature>",
+      "importFrom": "",
+      "_help": "importFrom: the team's React component package, e.g. @thaimart/ui (empty until it exists)."
+    },
+    "flutter": {
+      "pending": true,
+      "enabled": true,
+      "tool": "widgetbook",
+      "useCaseDir": "lib/widgetbook/features/<feature>",
+      "package": "",
+      "_help": "tool: how the central Storybook shows Flutter (widgetbook unless the team says otherwise). package: the team's Flutter design system package."
+    },
+    "html": {
+      "convertTo": "react",
+      "allowHtmlStories": false,
+      "_help": "HTML prototypes are converted to this target; an HTML story is kept only when allowHtmlStories is true."
+    }
+  },
+  "review": {
+    "pending": true,
+    "leads": [],
+    "labels": ["prototype", "design-system", "needs-lead-review"],
+    "_help": "leads: the GitLab or GitHub usernames of the Lead reviewers."
+  },
+  "registry": {
+    "url": "",
+    "_help": "A newer component registry (JSON) from the design system team. Empty = the registry inside the skill."
+  },
+  "handoffDir": "storybook-handoff",
+  "mr": {
+    "cli": "auto",
+    "_help": "auto = glab or gh when installed and logged in; glab; gh; none = print the steps."
+  }
+}

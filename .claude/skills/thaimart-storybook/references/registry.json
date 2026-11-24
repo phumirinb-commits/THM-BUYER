@@ -1,0 +1,6742 @@
+{
+ "name": "Thaimart design system registry (thaimart-storybook)",
+ "version": "2026-11-03.2790b09",
+ "generated": "2026-11-03",
+ "status": "pending: the team's design system: until the team ships its Figma design system, React and Flutter packages and the central Storybook, the design system is the prototype's (proto/final tokens.css, kit.css, trust.*) and these 34 components",
+ "source": "link-tools/fin/ds (data.mjs, inventory.json: 193 screens counted) + link-tools/fin/ai/storybook/hints.mjs, bindings.json",
+ "usage": "components[].proto = the prototype kit today; react / flutter = the team packages (pending until filled). props = the Figma component properties (values, default, kind). Map a hand-made part to the component whose hints or keywords match; never invent a component, prop or value.",
+ "steps": [
+  {
+   "step": 0,
+   "th": "พื้นฐาน",
+   "en": "Foundations"
+  },
+  {
+   "step": 1,
+   "th": "ชิ้นหลัก",
+   "en": "Core"
+  },
+  {
+   "step": 2,
+   "th": "ซื้อขาย",
+   "en": "Commerce"
+  },
+  {
+   "step": 3,
+   "th": "โซเชียลและไลฟ์",
+   "en": "Social · Live"
+  }
+ ],
+ "foundations": [
+  {
+   "n": "0.1",
+   "step": 0,
+   "name": {
+    "th": "สี",
+    "en": "Color"
+   },
+   "tokens": [
+    "--c-white",
+    "--c-ink",
+    "--c-ink-2",
+    "--c-muted",
+    "--c-tab",
+    "--c-faint",
+    "--c-idle",
+    "--c-control",
+    "--c-line",
+    "--c-disabled",
+    "--c-img",
+    "--c-grey",
+    "--c-red",
+    "--c-red-t",
+    "--c-red-50",
+    "--c-red-100",
+    "--c-red-200",
+    "--c-red-300",
+    "--c-star",
+    "--c-star-off",
+    "--c-ok",
+    "--c-ok-tint",
+    "--c-warn",
+    "--c-warn-tint",
+    "--c-warn-fill",
+    "--c-media",
+    "--c-brand-line",
+    "--c-brand-fb",
+    "--c-brand-ms",
+    "--c-brand-ig",
+    "--c-brand-pp",
+    "--c-brand-visa",
+    "--c-bank-kb",
+    "--c-bank-scb",
+    "--c-bank-ktb",
+    "--c-bank-bbl",
+    "--c-bank-bay",
+    "--c-bank-ttb",
+    "--c-cert-tis",
+    "--c-cert-fda",
+    "--c-tint",
+    "--c-glass",
+    "--c-glass-light",
+    "--c-glass-white",
+    "--c-shade",
+    "--c-scrim",
+    "--c-toast",
+    "--c-track",
+    "--fx-mood",
+    "--fx-mood-grey",
+    "--g-shade-top",
+    "--g-rv-fade",
+    "--g-reel-shade",
+    "--g-shop-clip",
+    "--g-clip-view",
+    "--g-ban-sale",
+    "--g-ban-new",
+    "--g-ban-live",
+    "--g-flash",
+    "--c-wash",
+    "--c-wash-2",
+    "--c-red-wash"
+   ]
+  },
+  {
+   "n": "0.2",
+   "step": 0,
+   "name": {
+    "th": "ตัวอักษร",
+    "en": "Type"
+   },
+   "tokens": [
+    "--font-ui",
+    "--fs-12",
+    "--fs-13",
+    "--fs-14",
+    "--fs-16",
+    "--fs-18",
+    "--fs-20",
+    "--fs-24",
+    "--fs-28",
+    "--lh-18",
+    "--lh-20",
+    "--lh-22",
+    "--lh-24",
+    "--lh-26",
+    "--lh-28",
+    "--lh-30",
+    "--lh-34",
+    "--lh-36",
+    "--lh-40"
+   ]
+  },
+  {
+   "n": "0.3",
+   "step": 0,
+   "name": {
+    "th": "ระยะห่าง",
+    "en": "Spacing"
+   },
+   "tokens": [
+    "--s-2",
+    "--s-4",
+    "--s-6",
+    "--s-8",
+    "--s-10",
+    "--s-12",
+    "--s-16",
+    "--s-20",
+    "--s-24",
+    "--s-28",
+    "--s-32",
+    "--s-40",
+    "--s-48",
+    "--s-56",
+    "--s-64"
+   ]
+  },
+  {
+   "n": "0.4",
+   "step": 0,
+   "name": {
+    "th": "มุมโค้ง",
+    "en": "Radius"
+   },
+   "tokens": [
+    "--r-4",
+    "--r-6",
+    "--r-8",
+    "--r-10",
+    "--r-12",
+    "--r-16",
+    "--r-20",
+    "--r-24",
+    "--r-pill"
+   ]
+  },
+  {
+   "n": "0.5",
+   "step": 0,
+   "name": {
+    "th": "เงา",
+    "en": "Shadow"
+   },
+   "tokens": [
+    "--sh-card",
+    "--sh-soft",
+    "--sh-float",
+    "--sh-search",
+    "--sh-tab",
+    "--sh-sheet",
+    "--sh-toast",
+    "--ring-white",
+    "--sh-ic",
+    "--sh-pcard"
+   ]
+  },
+  {
+   "n": "0.6",
+   "step": 0,
+   "name": {
+    "th": "ไอคอน",
+    "en": "Icons"
+   },
+   "tokens": [
+    "--ic-12",
+    "--ic-13",
+    "--ic-14",
+    "--ic-16",
+    "--ic-18",
+    "--ic-20",
+    "--ic-22",
+    "--ic-24",
+    "--ic-26",
+    "--ic-28",
+    "--ic-32"
+   ]
+  },
+  {
+   "n": "0.7",
+   "step": 0,
+   "name": {
+    "th": "โครงหน้า",
+    "en": "Grid · Layout"
+   },
+   "tokens": [
+    "--gutter",
+    "--tap",
+    "--w-screen",
+    "--w-content",
+    "--h-status",
+    "--y-root-row",
+    "--h-row",
+    "--h-phd",
+    "--h-shd",
+    "--h-tabbar",
+    "--h-actionbar"
+   ]
+  }
+ ],
+ "components": [
+  {
+   "id": "button",
+   "n": "1.1",
+   "step": 1,
+   "name": {
+    "en": "Button",
+    "th": "ปุ่ม"
+   },
+   "parts": [
+    "Button"
+   ],
+   "why": "ทุกการกระทำเริ่มที่ปุ่ม ทำก่อนชิ้นอื่น",
+   "proto": {
+    "blocks": [
+     "i-btn",
+     "i-btns"
+    ],
+    "classes": [
+     ".i-btn",
+     ".i-btns",
+     ".i-btn--primary",
+     ".i-btn--line",
+     ".i-btn--tint",
+     ".i-btn--grey",
+     ".i-btn--outline",
+     ".i-btn--sm",
+     ".i-btn--md",
+     ".i-btn--lg",
+     ".i-btn--block"
+    ],
+    "notes": [
+     "[disabled]"
+    ]
+   },
+   "props": [
+    {
+     "name": "Variant",
+     "values": [
+      "Primary",
+      "Line",
+      "Tint",
+      "Grey",
+      "Outline"
+     ],
+     "default": "Primary",
+     "kind": "variant",
+     "suggest": {
+      "react": "variant",
+      "flutter": "variant"
+     }
+    },
+    {
+     "name": "Size",
+     "values": [
+      "44",
+      "32",
+      "42",
+      "48"
+     ],
+     "default": "44",
+     "kind": "variant",
+     "suggest": {
+      "react": "size",
+      "flutter": "size"
+     }
+    },
+    {
+     "name": "Width",
+     "values": [
+      "Hug",
+      "Fill"
+     ],
+     "default": "Hug",
+     "kind": "variant",
+     "suggest": {
+      "react": "width",
+      "flutter": "width"
+     }
+    },
+    {
+     "name": "State",
+     "values": [
+      "Default",
+      "Pressed",
+      "Disabled"
+     ],
+     "default": "Default",
+     "kind": "state",
+     "suggest": {
+      "react": "state",
+      "flutter": "state"
+     }
+    },
+    {
+     "name": "Icon",
+     "values": [
+      "false",
+      "true"
+     ],
+     "default": "false",
+     "kind": "boolean",
+     "suggest": {
+      "react": "icon",
+      "flutter": "icon"
+     }
+    }
+   ],
+   "rules": [
+    "ปุ่มหลักหนึ่งเดียวต่อจอ",
+    "ปุ่มรองตัวหนาเท่าปุ่มหลัก",
+    "Outline ใช้กับปุ่มซื้อเล็กในไลฟ์เท่านั้น"
+   ],
+   "tokens": [
+    "--c-control",
+    "--c-disabled",
+    "--c-grey",
+    "--c-ink",
+    "--c-red",
+    "--c-red-t",
+    "--c-tab",
+    "--c-tint",
+    "--c-white",
+    "--fs-14",
+    "--fs-16",
+    "--ic-18",
+    "--lh-20",
+    "--lh-22",
+    "--lh-24",
+    "--r-10",
+    "--r-8",
+    "--s-12",
+    "--s-16",
+    "--s-20",
+    "--s-6",
+    "--s-8",
+    "--tap"
+   ],
+   "screens": {
+    "total": 114,
+    "phone": 104,
+    "desk": 5,
+    "duo": 5,
+    "examples": [
+     "F1 หน้าแรก · ดูสตอรี่",
+     "หน้าเสริม · หน้าสินค้า · จากไลฟ์",
+     "B2 ซื้อในไลฟ์"
+    ]
+   },
+   "keywords": [
+    "btn",
+    "cta",
+    "buy",
+    "submit",
+    "action"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "Button"
+    ],
+    "flutter": [
+     "TmButton"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "icon-button",
+   "n": "1.2",
+   "step": 1,
+   "name": {
+    "en": "Icon Button · Count",
+    "th": "ปุ่มไอคอน และตัวเลข"
+   },
+   "parts": [
+    "Icon Button",
+    "Count"
+   ],
+   "why": "ปุ่มในหัวหน้า และปุ่มกลมบนรูป ใช้ซ้ำทุกหน้า",
+   "proto": {
+    "blocks": [
+     "i-count",
+     "i-float",
+     "i-icbtn"
+    ],
+    "classes": [
+     ".i-count",
+     ".i-float",
+     ".i-icbtn",
+     ".i-hd__btn",
+     ".i-phd__btn",
+     ".i-count--plain"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Variant",
+     "values": [
+      "Glass",
+      "Plain",
+      "Dark"
+     ],
+     "default": "Glass",
+     "kind": "variant",
+     "suggest": {
+      "react": "variant",
+      "flutter": "variant"
+     }
+    },
+    {
+     "name": "State",
+     "values": [
+      "Default",
+      "On"
+     ],
+     "default": "Default",
+     "kind": "state",
+     "suggest": {
+      "react": "state",
+      "flutter": "state"
+     }
+    },
+    {
+     "name": "Count",
+     "values": [
+      "None",
+      "Number"
+     ],
+     "default": "None",
+     "kind": "variant",
+     "suggest": {
+      "react": "count",
+      "flutter": "count"
+     }
+    },
+    {
+     "name": "Icon",
+     "values": [
+      "Instance"
+     ],
+     "default": "Instance",
+     "kind": "slot",
+     "suggest": {
+      "react": "icon",
+      "flutter": "icon"
+     }
+    }
+   ],
+   "rules": [
+    "ทุกปุ่มแตะได้ 44 × 44",
+    "ตัวเลขเป็น 0 ไม่ต้องแสดง"
+   ],
+   "tokens": [
+    "--bw-15",
+    "--c-glass",
+    "--c-ink",
+    "--c-red",
+    "--c-white",
+    "--e-live-s-5",
+    "--fs-12",
+    "--ic-20",
+    "--lh-18",
+    "--r-pill",
+    "--s-4",
+    "--tap",
+    "--z-1",
+    "--z-5"
+   ],
+   "screens": {
+    "total": 113,
+    "phone": 103,
+    "desk": 7,
+    "duo": 3,
+    "examples": [
+     "F1 หน้าแรก",
+     "F1 หน้าแรก · หมวดกีฬา",
+     "F1 หน้าแรก · ดูสตอรี่"
+    ]
+   },
+   "keywords": [
+    "icon",
+    "iconbutton",
+    "fab",
+    "badge count",
+    "counter"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "IconButton",
+     "Count"
+    ],
+    "flutter": [
+     "TmIconButton",
+     "TmCount"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "chip",
+   "n": "1.3",
+   "step": 1,
+   "name": {
+    "en": "Chip",
+    "th": "ชิป"
+   },
+   "parts": [
+    "Chip"
+   ],
+   "why": "ตัวกรอง หมวดหมู่ และตัวเลือกสินค้า ใช้แบบเลือกแล้วเหมือนกัน",
+   "proto": {
+    "blocks": [
+     "i-chip",
+     "g-fchip",
+     "i-cat",
+     "i-opt",
+     "i-subcat",
+     "i-chips"
+    ],
+    "classes": [
+     ".i-chip",
+     ".g-fchip",
+     ".i-cat",
+     ".i-opt",
+     ".i-subcat",
+     ".i-chips"
+    ],
+    "notes": [
+     "aria-pressed",
+     "aria-selected",
+     "aria-checked"
+    ]
+   },
+   "props": [
+    {
+     "name": "Variant",
+     "values": [
+      "Filter",
+      "Category",
+      "Option"
+     ],
+     "default": "Filter",
+     "kind": "variant",
+     "suggest": {
+      "react": "variant",
+      "flutter": "variant"
+     }
+    },
+    {
+     "name": "State",
+     "values": [
+      "Off",
+      "On",
+      "Disabled"
+     ],
+     "default": "Off",
+     "kind": "state",
+     "suggest": {
+      "react": "state",
+      "flutter": "state"
+     }
+    },
+    {
+     "name": "Leading",
+     "values": [
+      "None",
+      "Badge icon",
+      "Swatch"
+     ],
+     "default": "None",
+     "kind": "variant",
+     "suggest": {
+      "react": "leading",
+      "flutter": "leading"
+     }
+    }
+   ],
+   "rules": [
+    "เลือกแล้ว พื้นชมพู ขอบแดง ตัวแดงเข้ม",
+    "แถวชิปเลื่อนข้างได้ เริ่มที่ 16"
+   ],
+   "tokens": [
+    "--bw-2",
+    "--c-control",
+    "--c-grey",
+    "--c-ink",
+    "--c-line",
+    "--c-muted",
+    "--c-red",
+    "--c-red-t",
+    "--c-tint",
+    "--c-white",
+    "--fs-12",
+    "--fs-14",
+    "--ic-16",
+    "--ic-24",
+    "--ic-26",
+    "--lh-18",
+    "--lh-20",
+    "--r-16",
+    "--r-4",
+    "--r-8",
+    "--r-pill",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-4",
+    "--s-6",
+    "--s-8",
+    "--sh-card",
+    "--sh-float",
+    "--tap"
+   ],
+   "screens": {
+    "total": 63,
+    "phone": 58,
+    "desk": 3,
+    "duo": 2,
+    "examples": [
+     "F1 หน้าแรก",
+     "F1 หน้าแรก · หมวดกีฬา",
+     "F1 หน้าแรก · ดูสตอรี่"
+    ]
+   },
+   "keywords": [
+    "pill",
+    "filter",
+    "category",
+    "option",
+    "choice",
+    "segment"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "Chip"
+    ],
+    "flutter": [
+     "TmChip"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "follow-button",
+   "n": "1.4",
+   "step": 1,
+   "name": {
+    "en": "Follow Button",
+    "th": "ปุ่มติดตาม"
+   },
+   "parts": [
+    "Follow Button"
+   ],
+   "why": "มีทั้งในร้าน โพสต์ ครีเอเตอร์ และไลฟ์",
+   "proto": {
+    "blocks": [
+     "i-follow"
+    ],
+    "classes": [
+     ".i-follow",
+     ".i-follow--lg",
+     ".i-follow--live"
+    ],
+    "notes": [
+     "aria-pressed",
+     "ไลฟ์เท่านั้น"
+    ]
+   },
+   "props": [
+    {
+     "name": "State",
+     "values": [
+      "Off",
+      "On"
+     ],
+     "default": "Off",
+     "kind": "state",
+     "suggest": {
+      "react": "state",
+      "flutter": "state"
+     }
+    },
+    {
+     "name": "Size",
+     "values": [
+      "32",
+      "40"
+     ],
+     "default": "32",
+     "kind": "variant",
+     "suggest": {
+      "react": "size",
+      "flutter": "size"
+     }
+    },
+    {
+     "name": "Surface",
+     "values": [
+      "Default",
+      "Live"
+     ],
+     "default": "Default",
+     "kind": "variant",
+     "suggest": {
+      "react": "surface",
+      "flutter": "surface"
+     }
+    }
+   ],
+   "rules": [
+    "แบบไลฟ์ใช้เฉพาะในหน้าไลฟ์"
+   ],
+   "tokens": [
+    "--c-grey",
+    "--c-muted",
+    "--c-red",
+    "--c-red-t",
+    "--c-tint",
+    "--c-white",
+    "--e-live-follow-on",
+    "--fs-14",
+    "--lh-20",
+    "--lh-22",
+    "--r-10",
+    "--r-16",
+    "--r-pill",
+    "--s-12",
+    "--s-4"
+   ],
+   "screens": {
+    "total": 69,
+    "phone": 60,
+    "desk": 5,
+    "duo": 4,
+    "examples": [
+     "F1 หน้าแรก",
+     "F1 หน้าแรก · หมวดกีฬา",
+     "F1 หน้าแรก · ดูสตอรี่"
+    ]
+   },
+   "keywords": [
+    "follow",
+    "subscribe"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "FollowButton"
+    ],
+    "flutter": [
+     "TmFollowButton"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "trust-badge",
+   "n": "1.5",
+   "step": 1,
+   "name": {
+    "en": "Trust Badge",
+    "th": "ป้ายความมั่นใจ"
+   },
+   "parts": [
+    "Trust Badge"
+   ],
+   "why": "หัวใจของแนวทางที่เลือก อยู่บนการ์ดสินค้าแทบทุกใบ",
+   "proto": {
+    "blocks": [
+     "t-pill",
+     "t-tag",
+     "t-ptag",
+     "t-ics",
+     "t-badges",
+     "i-promise"
+    ],
+    "classes": [
+     ".t-pill",
+     ".t-tag",
+     ".t-ptag",
+     ".t-ics",
+     ".t-badges",
+     ".i-promise",
+     ".t-ic"
+    ],
+    "notes": [
+     "trust.js",
+     "TB",
+     "TI"
+    ]
+   },
+   "props": [
+    {
+     "name": "Type",
+     "values": [
+      "Pill 24",
+      "Tag 32",
+      "Product tag 40",
+      "Icon circle 24"
+     ],
+     "default": "Pill 24",
+     "kind": "variant",
+     "suggest": {
+      "react": "type",
+      "flutter": "type"
+     }
+    },
+    {
+     "name": "Kind",
+     "values": [
+      "Official",
+      "Authentic",
+      "Official + Authentic",
+      "มอก.",
+      "อย.",
+      "Refund 2x",
+      "Free shipping",
+      "Verified"
+     ],
+     "default": "Official + Authentic",
+     "kind": "variant",
+     "suggest": {
+      "react": "kind",
+      "flutter": "kind"
+     }
+    }
+   ],
+   "rules": [
+    "ป้ายมาจากข้อมูลจริง ไม่มีข้อมูล ไม่แสดง",
+    "ห้ามคิดป้ายใหม่ ห้ามพื้นแดงทึบ",
+    "ร้านทางการ เฉพาะร้านทางการ"
+   ],
+   "tokens": [
+    "--c-control",
+    "--c-ink",
+    "--c-ink-2",
+    "--c-wash",
+    "--c-wash-2",
+    "--c-white",
+    "--fs-12",
+    "--fs-14",
+    "--lh-18",
+    "--r-pill",
+    "--s-12",
+    "--s-16",
+    "--s-32",
+    "--s-4",
+    "--s-6",
+    "--s-8",
+    "--z-2"
+   ],
+   "screens": {
+    "total": 101,
+    "phone": 88,
+    "desk": 7,
+    "duo": 6,
+    "examples": [
+     "F1 หน้าแรก",
+     "F1 หน้าแรก · หมวดกีฬา",
+     "F1 หน้าแรก · ดูสตอรี่"
+    ]
+   },
+   "keywords": [
+    "badge",
+    "trust",
+    "official",
+    "authentic",
+    "genuine",
+    "cert",
+    "refund",
+    "shipping",
+    "verified",
+    "label",
+    "seal"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "TrustBadge"
+    ],
+    "flutter": [
+     "TmTrustBadge"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "price",
+   "n": "1.6",
+   "step": 1,
+   "name": {
+    "en": "Price · Rating",
+    "th": "ราคา และแถวคะแนน"
+   },
+   "parts": [
+    "Price",
+    "Rating"
+   ],
+   "why": "ราคาอยู่แทบทุกจอ ต้องเหมือนกันทุกที่",
+   "proto": {
+    "blocks": [
+     "i-price",
+     "i-was",
+     "i-tagdisc",
+     "i-prow",
+     "i-meta",
+     "i-sold",
+     "i-stars"
+    ],
+    "classes": [
+     ".i-price",
+     ".i-was",
+     ".i-tagdisc",
+     ".i-prow",
+     ".i-meta",
+     ".i-sold",
+     ".i-stars",
+     ".i-price--sm",
+     ".i-price--md",
+     ".i-price--lg",
+     ".i-was__line"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Size",
+     "values": [
+      "14",
+      "16",
+      "20",
+      "24"
+     ],
+     "default": "20",
+     "kind": "variant",
+     "suggest": {
+      "react": "size",
+      "flutter": "size"
+     }
+    },
+    {
+     "name": "Was price",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "wasPrice",
+      "flutter": "wasPrice"
+     }
+    },
+    {
+     "name": "Discount",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "discount",
+      "flutter": "discount"
+     }
+    },
+    {
+     "name": "Rating size",
+     "values": [
+      "12",
+      "14"
+     ],
+     "default": "12",
+     "kind": "variant",
+     "suggest": {
+      "react": "ratingSize",
+      "flutter": "ratingSize"
+     }
+    },
+    {
+     "name": "Reviews",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "false",
+     "kind": "boolean",
+     "suggest": {
+      "react": "reviews",
+      "flutter": "reviews"
+     }
+    }
+   ],
+   "rules": [
+    "ราคาแดงตัวหนา",
+    "ราคาเดิมเทา ใช้เส้นที่วาด ไม่ใช้ขีดฆ่าตัวอักษร",
+    "ดาวอยู่ติดตัวเลขเสมอ"
+   ],
+   "tokens": [
+    "--c-control",
+    "--c-muted",
+    "--c-red",
+    "--c-red-t",
+    "--c-star",
+    "--c-star-off",
+    "--c-tint",
+    "--e-live-lh-16",
+    "--fs-12",
+    "--fs-14",
+    "--fs-16",
+    "--fs-20",
+    "--fs-24",
+    "--ic-12",
+    "--ic-14",
+    "--lh-18",
+    "--lh-20",
+    "--lh-22",
+    "--lh-24",
+    "--lh-28",
+    "--lh-34",
+    "--r-4",
+    "--s-2",
+    "--s-4",
+    "--s-6",
+    "--s-8"
+   ],
+   "screens": {
+    "total": 124,
+    "phone": 114,
+    "desk": 5,
+    "duo": 5,
+    "examples": [
+     "F1 หน้าแรก",
+     "F1 หน้าแรก · หมวดกีฬา",
+     "F1 หน้าแรก · ดูสตอรี่"
+    ]
+   },
+   "keywords": [
+    "price",
+    "cost",
+    "discount",
+    "rating",
+    "stars",
+    "sold",
+    "review score"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "Price",
+     "Rating"
+    ],
+    "flutter": [
+     "TmPrice",
+     "TmRating"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "tabs",
+   "n": "1.7",
+   "step": 1,
+   "name": {
+    "en": "Tabs",
+    "th": "แท็บ"
+   },
+   "parts": [
+    "Tabs"
+   ],
+   "why": "แท็บเนื้อหาในร้าน ครีเอเตอร์ โปรไฟล์ และฟีด",
+   "proto": {
+    "blocks": [
+     "i-utabs",
+     "i-ftabs"
+    ],
+    "classes": [
+     ".i-utabs",
+     ".i-ftabs",
+     ".i-utabs--3",
+     ".i-utab",
+     ".i-ftab"
+    ],
+    "notes": [
+     "aria-selected"
+    ]
+   },
+   "props": [
+    {
+     "name": "Variant",
+     "values": [
+      "Underline",
+      "Equal",
+      "Feed"
+     ],
+     "default": "Underline",
+     "kind": "variant",
+     "suggest": {
+      "react": "variant",
+      "flutter": "variant"
+     }
+    },
+    {
+     "name": "Items",
+     "values": [
+      "2",
+      "3",
+      "4"
+     ],
+     "default": "4",
+     "kind": "variant",
+     "suggest": {
+      "react": "items",
+      "flutter": "items"
+     }
+    },
+    {
+     "name": "Selected",
+     "values": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "default": "1",
+     "kind": "state",
+     "suggest": {
+      "react": "selected",
+      "flutter": "selected"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--c-ink",
+    "--c-line",
+    "--c-muted",
+    "--lh-22",
+    "--s-16",
+    "--s-4",
+    "--s-8"
+   ],
+   "screens": {
+    "total": 44,
+    "phone": 38,
+    "desk": 3,
+    "duo": 3,
+    "examples": [
+     "F2 Discover",
+     "F2 Discover · แท็บกำลังติดตาม",
+     "หน้าเสริม · ผลค้นหา · จากรูป"
+    ]
+   },
+   "keywords": [
+    "tab",
+    "tabs",
+    "segment",
+    "switcher"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "Tabs"
+    ],
+    "flutter": [
+     "TmTabs"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "form-controls",
+   "n": "1.8",
+   "step": 1,
+   "name": {
+    "en": "Search · Input · Switch · Radio · Checkbox",
+    "th": "ช่องกรอก และตัวเลือกในฟอร์ม"
+   },
+   "parts": [
+    "Search",
+    "Input",
+    "Switch",
+    "Radio",
+    "Checkbox"
+   ],
+   "why": "5 ชิ้นเล็กที่ตะกร้า ชำระเงิน รีวิว และแต่งร้านใช้ร่วมกัน",
+   "proto": {
+    "blocks": [
+     "i-switch",
+     "i-input",
+     "i-search",
+     "i-radio",
+     "i-check"
+    ],
+    "classes": [
+     ".i-switch",
+     ".i-input",
+     ".i-search",
+     ".i-radio",
+     ".i-check"
+    ],
+    "notes": [
+     "has-value",
+     "aria-checked"
+    ]
+   },
+   "props": [
+    {
+     "name": "Search",
+     "values": [
+      "Empty",
+      "Typing"
+     ],
+     "default": "Empty",
+     "kind": "state",
+     "suggest": {
+      "react": "search",
+      "flutter": "search"
+     }
+    },
+    {
+     "name": "Input",
+     "values": [
+      "Empty",
+      "Filled",
+      "Focus"
+     ],
+     "default": "Empty",
+     "kind": "state",
+     "suggest": {
+      "react": "input",
+      "flutter": "input"
+     }
+    },
+    {
+     "name": "Switch",
+     "values": [
+      "Off",
+      "On"
+     ],
+     "default": "On",
+     "kind": "state",
+     "suggest": {
+      "react": "switch",
+      "flutter": "switch"
+     }
+    },
+    {
+     "name": "Radio",
+     "values": [
+      "Off",
+      "On"
+     ],
+     "default": "On",
+     "kind": "state",
+     "suggest": {
+      "react": "radio",
+      "flutter": "radio"
+     }
+    },
+    {
+     "name": "Checkbox",
+     "values": [
+      "Off",
+      "On",
+      "Mixed"
+     ],
+     "default": "On",
+     "kind": "state",
+     "suggest": {
+      "react": "checkbox",
+      "flutter": "checkbox"
+     }
+    }
+   ],
+   "rules": [
+    "ทุกชิ้นแตะได้ 44",
+    "ข้อความในช่อง 16 ขึ้นไป แป้นพิมพ์ไม่ซูม"
+   ],
+   "tokens": [
+    "--bw-15",
+    "--bw-6",
+    "--c-control",
+    "--c-faint",
+    "--c-grey",
+    "--c-idle",
+    "--c-ink",
+    "--c-ink-2",
+    "--c-muted",
+    "--c-red",
+    "--c-tab",
+    "--c-tint",
+    "--c-white",
+    "--e-check-top",
+    "--fs-14",
+    "--fs-16",
+    "--ic-14",
+    "--ic-16",
+    "--ic-22",
+    "--lh-20",
+    "--lh-24",
+    "--r-10",
+    "--r-12",
+    "--r-16",
+    "--r-20",
+    "--r-6",
+    "--r-pill",
+    "--s-12",
+    "--s-16",
+    "--s-4",
+    "--s-6",
+    "--s-8",
+    "--sh-search",
+    "--tap"
+   ],
+   "screens": {
+    "total": 62,
+    "phone": 62,
+    "desk": 0,
+    "duo": 0,
+    "examples": [
+     "B2 ซื้อในไลฟ์",
+     "B2 ซื้อในไลฟ์ · เลือกวิธีชำระเงิน",
+     "B2 ซื้อในไลฟ์ · เลือกที่อยู่"
+    ]
+   },
+   "keywords": [
+    "search",
+    "input",
+    "field",
+    "textfield",
+    "switch",
+    "toggle",
+    "radio",
+    "checkbox",
+    "form"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "Search",
+     "Input",
+     "Switch",
+     "Radio",
+     "Checkbox"
+    ],
+    "flutter": [
+     "TmSearch",
+     "TmInput",
+     "TmSwitch",
+     "TmRadio",
+     "TmCheckbox"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "section-header",
+   "n": "1.9",
+   "step": 1,
+   "name": {
+    "en": "Section Header",
+    "th": "หัวข้อส่วน"
+   },
+   "parts": [
+    "Section Header"
+   ],
+   "why": "ทุกบล็อกในหน้าเปิดด้วยหัวข้อนี้",
+   "proto": {
+    "blocks": [
+     "i-sh",
+     "i-more"
+    ],
+    "classes": [
+     ".i-sh",
+     ".i-more",
+     ".i-h18r",
+     ".i-more--grey"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Link",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "link",
+      "flutter": "link"
+     }
+    },
+    {
+     "name": "Surface",
+     "values": [
+      "White",
+      "Grey"
+     ],
+     "default": "White",
+     "kind": "variant",
+     "suggest": {
+      "react": "surface",
+      "flutter": "surface"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--c-ink",
+    "--c-red",
+    "--c-red-t",
+    "--fs-14",
+    "--fs-16",
+    "--ic-16",
+    "--lh-20",
+    "--lh-22",
+    "--lh-24",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-8",
+    "--tap"
+   ],
+   "screens": {
+    "total": 75,
+    "phone": 66,
+    "desk": 4,
+    "duo": 5,
+    "examples": [
+     "F1 หน้าแรก",
+     "F1 หน้าแรก · หมวดกีฬา",
+     "F1 หน้าแรก · ดูสตอรี่"
+    ]
+   },
+   "keywords": [
+    "section",
+    "heading",
+    "title row",
+    "see all",
+    "more"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "SectionHeader"
+    ],
+    "flutter": [
+     "TmSectionHeader"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "top-bar",
+   "n": "1.10",
+   "step": 1,
+   "name": {
+    "en": "Top Bar",
+    "th": "หัวหน้า"
+   },
+   "parts": [
+    "Top Bar"
+   ],
+   "why": "ทุกหน้ามีหัวหน้า 1 ใน 4 แบบ",
+   "proto": {
+    "blocks": [
+     "i-phd",
+     "i-hd",
+     "i-shd"
+    ],
+    "classes": [
+     ".i-phd",
+     ".i-hd",
+     ".i-shd",
+     ".i-hd__btn",
+     ".i-phd__title",
+     ".i-float"
+    ],
+    "notes": [
+     "หน้ามืด"
+    ]
+   },
+   "props": [
+    {
+     "name": "Variant",
+     "values": [
+      "Root",
+      "Pushed",
+      "Search",
+      "Media"
+     ],
+     "default": "Root",
+     "kind": "variant",
+     "suggest": {
+      "react": "variant",
+      "flutter": "variant"
+     }
+    },
+    {
+     "name": "Title",
+     "values": [
+      "Text"
+     ],
+     "default": "Text",
+     "kind": "slot",
+     "suggest": {
+      "react": "title",
+      "flutter": "title"
+     }
+    },
+    {
+     "name": "Actions",
+     "values": [
+      "0",
+      "1",
+      "2",
+      "3"
+     ],
+     "default": "3",
+     "kind": "variant",
+     "suggest": {
+      "react": "actions",
+      "flutter": "actions"
+     }
+    }
+   ],
+   "rules": [
+    "แถบสถานะ 62 อยู่บนสุดทุกแบบ",
+    "ด้านบนแดงอ่อน เฉพาะ 4 หน้าหลัก"
+   ],
+   "tokens": [
+    "--c-glass-light",
+    "--c-grey",
+    "--c-ink",
+    "--c-line",
+    "--c-red",
+    "--c-white",
+    "--ease-std",
+    "--fs-18",
+    "--h-phd",
+    "--h-shd",
+    "--h-status",
+    "--ic-22",
+    "--ic-24",
+    "--lh-26",
+    "--m-fast",
+    "--r-20",
+    "--r-24",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-4",
+    "--s-6",
+    "--sh-float",
+    "--sh-search",
+    "--tap",
+    "--z-1",
+    "--z-3",
+    "--z-header"
+   ],
+   "screens": {
+    "total": 142,
+    "phone": 131,
+    "desk": 7,
+    "duo": 4,
+    "examples": [
+     "F1 หน้าแรก",
+     "F1 หน้าแรก · หมวดกีฬา",
+     "F1 หน้าแรก · ดูสตอรี่"
+    ]
+   },
+   "keywords": [
+    "header",
+    "appbar",
+    "navbar",
+    "topbar",
+    "nav"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "TopBar"
+    ],
+    "flutter": [
+     "TmTopBar"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "tab-bar",
+   "n": "1.11",
+   "step": 1,
+   "name": {
+    "en": "Tab Bar",
+    "th": "แท็บบาร์"
+   },
+   "parts": [
+    "Tab Bar"
+   ],
+   "why": "อยู่ล่างจอของทุกหน้าหลัก",
+   "proto": {
+    "blocks": [
+     "i-tabbar",
+     "i-tab"
+    ],
+    "classes": [
+     ".i-tabbar",
+     ".i-tab",
+     ".i-tab__on",
+     ".i-tab__off"
+    ],
+    "notes": [
+     "aria-current=\"page\""
+    ]
+   },
+   "props": [
+    {
+     "name": "Active",
+     "values": [
+      "Home",
+      "Discover",
+      "Live",
+      "Order",
+      "Profile"
+     ],
+     "default": "Home",
+     "kind": "state",
+     "suggest": {
+      "react": "active",
+      "flutter": "active"
+     }
+    },
+    {
+     "name": "Tab · State",
+     "values": [
+      "Off",
+      "On"
+     ],
+     "default": "Off",
+     "kind": "state",
+     "suggest": {
+      "react": "tabState",
+      "flutter": "tabState"
+     }
+    }
+   ],
+   "rules": [
+    "ไอคอน 32 ชื่อ 12",
+    "แท็บที่เปิด ไอคอนทึบแดง ตัวหนา"
+   ],
+   "tokens": [
+    "--c-muted",
+    "--c-red",
+    "--c-tab",
+    "--c-white",
+    "--fs-12",
+    "--ic-32",
+    "--lh-18",
+    "--s-12",
+    "--s-8",
+    "--sh-tab",
+    "--z-tabbar"
+   ],
+   "screens": {
+    "total": 65,
+    "phone": 65,
+    "desk": 0,
+    "duo": 0,
+    "examples": [
+     "F1 หน้าแรก",
+     "F1 หน้าแรก · หมวดกีฬา",
+     "F1 หน้าแรก · ดูสตอรี่"
+    ]
+   },
+   "keywords": [
+    "bottomnav",
+    "bottom nav",
+    "tabbar",
+    "navigation bar"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "TabBar"
+    ],
+    "flutter": [
+     "TmTabBar"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "product-card",
+   "n": "1.12",
+   "step": 1,
+   "name": {
+    "en": "Product Card",
+    "th": "การ์ดสินค้า"
+   },
+   "parts": [
+    "Product Card"
+   ],
+   "why": "ประกอบจาก 1.5 และ 1.6 ทำหลังสองชิ้นนั้นเสร็จ",
+   "proto": {
+    "blocks": [
+     "i-pc",
+     "i-rc",
+     "i-grid2",
+     "t-mason"
+    ],
+    "classes": [
+     ".i-pc",
+     ".i-rc",
+     ".i-grid2",
+     ".t-mason",
+     ".i-pc__img",
+     ".i-pc__body",
+     ".i-rc--line"
+    ],
+    "notes": [
+     "trust.js"
+    ]
+   },
+   "props": [
+    {
+     "name": "Variant",
+     "values": [
+      "Grid 175",
+      "Small 124"
+     ],
+     "default": "Grid 175",
+     "kind": "variant",
+     "suggest": {
+      "react": "variant",
+      "flutter": "variant"
+     }
+    },
+    {
+     "name": "Shop",
+     "values": [
+      "Official",
+      "Other"
+     ],
+     "default": "Official",
+     "kind": "variant",
+     "suggest": {
+      "react": "shop",
+      "flutter": "shop"
+     }
+    },
+    {
+     "name": "Icons",
+     "values": [
+      "0",
+      "1",
+      "2",
+      "3"
+     ],
+     "default": "3",
+     "kind": "variant",
+     "suggest": {
+      "react": "icons",
+      "flutter": "icons"
+     }
+    },
+    {
+     "name": "Discount",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "discount",
+      "flutter": "discount"
+     }
+    }
+   ],
+   "rules": [
+    "ตาราง 175 + 8 + 175 ต่อกันห่าง 8",
+    "ชื่อ 2 บรรทัด ตัดด้วยจุด",
+    "รูปชนขอบ ไม่บีบ ไม่ยืด"
+   ],
+   "tokens": [
+    "--c-grey",
+    "--c-ink",
+    "--c-muted",
+    "--c-white",
+    "--e-live-lh-19",
+    "--ease-std",
+    "--fs-12",
+    "--fs-14",
+    "--fs-20",
+    "--lh-18",
+    "--lh-20",
+    "--lh-28",
+    "--m-base",
+    "--r-12",
+    "--r-6",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-4",
+    "--s-8",
+    "--sh-card",
+    "--sh-float",
+    "--sh-pcard",
+    "--z-2"
+   ],
+   "screens": {
+    "total": 58,
+    "phone": 52,
+    "desk": 3,
+    "duo": 3,
+    "examples": [
+     "F1 หน้าแรก",
+     "F1 หน้าแรก · หมวดกีฬา",
+     "F1 หน้าแรก · ดูสตอรี่"
+    ]
+   },
+   "keywords": [
+    "product",
+    "item card",
+    "tile",
+    "grid item"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "ProductCard"
+    ],
+    "flutter": [
+     "TmProductCard"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "bottom-sheet",
+   "n": "1.13",
+   "step": 1,
+   "name": {
+    "en": "Bottom Sheet",
+    "th": "ชีต"
+   },
+   "parts": [
+    "Bottom Sheet"
+   ],
+   "why": "โค้ดมี 5 ชื่อ แต่หน้าตาเดียวกัน ทำเป็นคอมโพเนนต์เดียว",
+   "proto": {
+    "blocks": [
+     "i-sheet",
+     "g-sheet",
+     "b-sheet",
+     "d-sheet",
+     "sb-sheet",
+     "i-scrim",
+     "g-scrim"
+    ],
+    "classes": [
+     ".i-sheet",
+     ".g-sheet",
+     ".b-sheet",
+     ".d-sheet",
+     ".sb-sheet",
+     ".i-scrim",
+     ".g-scrim",
+     ".i-sheet__grab",
+     ".i-sheet__hd",
+     ".i-sheet__body",
+     ".i-sheet__foot"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Header",
+     "values": [
+      "Title",
+      "Product"
+     ],
+     "default": "Title",
+     "kind": "variant",
+     "suggest": {
+      "react": "header",
+      "flutter": "header"
+     }
+    },
+    {
+     "name": "Footer",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "footer",
+      "flutter": "footer"
+     }
+    },
+    {
+     "name": "Body",
+     "values": [
+      "Slot"
+     ],
+     "default": "Slot",
+     "kind": "slot",
+     "suggest": {
+      "react": "body",
+      "flutter": "body"
+     }
+    }
+   ],
+   "rules": [
+    "เลื่อนขึ้นจากล่าง ม่านดำ 42%",
+    "ปุ่มปิดขวาบน แตะได้ 44"
+   ],
+   "tokens": [
+    "--c-idle",
+    "--c-ink",
+    "--c-line",
+    "--c-muted",
+    "--c-scrim",
+    "--c-white",
+    "--e-live-line",
+    "--fs-14",
+    "--fs-18",
+    "--ic-24",
+    "--lh-20",
+    "--lh-26",
+    "--r-20",
+    "--r-pill",
+    "--s-12",
+    "--s-16",
+    "--s-20",
+    "--s-24",
+    "--s-32",
+    "--s-4",
+    "--s-40",
+    "--s-56",
+    "--s-8",
+    "--sh-sheet",
+    "--tap",
+    "--z-ov-scrim",
+    "--z-ov-sheet",
+    "--z-scrim",
+    "--z-sheet"
+   ],
+   "screens": {
+    "total": 38,
+    "phone": 38,
+    "desk": 0,
+    "duo": 0,
+    "examples": [
+     "หน้าเสริม · หน้าสินค้า · จากไลฟ์",
+     "B2 ซื้อในไลฟ์",
+     "B2 ซื้อในไลฟ์ · เลือกวิธีชำระเงิน"
+    ]
+   },
+   "keywords": [
+    "sheet",
+    "drawer",
+    "modal",
+    "dialog",
+    "popup"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "BottomSheet"
+    ],
+    "flutter": [
+     "TmBottomSheet"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "toast",
+   "n": "1.14",
+   "step": 1,
+   "name": {
+    "en": "Toast",
+    "th": "โทสต์"
+   },
+   "parts": [
+    "Toast"
+   ],
+   "why": "บอกผลหลังกด ใช้ทุกฟลว์",
+   "proto": {
+    "blocks": [
+     "i-toast"
+    ],
+    "classes": [
+     ".i-toast",
+     ".i-toast--bar",
+     ".i-toast--top",
+     ".i-toast__txt"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Position",
+     "values": [
+      "Bottom",
+      "Above bar",
+      "Top"
+     ],
+     "default": "Above bar",
+     "kind": "variant",
+     "suggest": {
+      "react": "position",
+      "flutter": "position"
+     }
+    },
+    {
+     "name": "Lines",
+     "values": [
+      "1",
+      "2"
+     ],
+     "default": "1",
+     "kind": "variant",
+     "suggest": {
+      "react": "lines",
+      "flutter": "lines"
+     }
+    }
+   ],
+   "rules": [
+    "หายเอง ไม่มีปุ่มปิด"
+   ],
+   "tokens": [
+    "--c-toast",
+    "--c-white",
+    "--fs-14",
+    "--fs-16",
+    "--ic-22",
+    "--lh-20",
+    "--lh-24",
+    "--r-12",
+    "--s-10",
+    "--s-12",
+    "--s-16",
+    "--sh-toast",
+    "--z-toast"
+   ],
+   "screens": {
+    "total": 16,
+    "phone": 16,
+    "desk": 0,
+    "duo": 0,
+    "examples": [
+     "B3 กลับเข้าไลฟ์",
+     "B4 ไลฟ์จบแล้ว · ตั้งเตือนไลฟ์หน้าแล้ว",
+     "F2 Discover · ติดตามครีเอเตอร์"
+    ]
+   },
+   "keywords": [
+    "toast",
+    "snackbar",
+    "notice",
+    "flash message"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "Toast"
+    ],
+    "flutter": [
+     "TmToast"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "product-top",
+   "n": "2.1",
+   "step": 2,
+   "name": {
+    "en": "Product Gallery · Product Info",
+    "th": "ส่วนบนหน้าสินค้า"
+   },
+   "parts": [
+    "Product Gallery",
+    "Product Info"
+   ],
+   "why": "หน้าที่คนตัดสินใจซื้อ รวมราคา ป้าย และการส่ง",
+   "proto": {
+    "blocks": [
+     "f-info",
+     "f-gal",
+     "g-info",
+     "g-gal"
+    ],
+    "classes": [
+     ".f-info",
+     ".f-gal",
+     ".g-info",
+     ".g-gal",
+     ".t-badges"
+    ],
+    "notes": [
+     "หน้าเสริม"
+    ]
+   },
+   "props": [
+    {
+     "name": "Gallery",
+     "values": [
+      "1 of N"
+     ],
+     "default": "1 of N",
+     "kind": "slot",
+     "suggest": {
+      "react": "gallery",
+      "flutter": "gallery"
+     }
+    },
+    {
+     "name": "Tags",
+     "values": [
+      "2",
+      "3",
+      "4"
+     ],
+     "default": "4",
+     "kind": "variant",
+     "suggest": {
+      "react": "tags",
+      "flutter": "tags"
+     }
+    },
+    {
+     "name": "Saved",
+     "values": [
+      "false",
+      "true"
+     ],
+     "default": "false",
+     "kind": "boolean",
+     "suggest": {
+      "react": "saved",
+      "flutter": "saved"
+     }
+    }
+   ],
+   "rules": [
+    "การันตีของแท้ เป็นป้ายแรกเสมอ",
+    "แถวส่งเริ่มด้วย ส่งจาก ..."
+   ],
+   "tokens": [
+    "--c-glass",
+    "--c-img",
+    "--c-ink",
+    "--c-white",
+    "--fs-12",
+    "--fs-14",
+    "--fs-20",
+    "--ic-24",
+    "--lh-18",
+    "--lh-20",
+    "--lh-28",
+    "--r-6",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-20",
+    "--s-4",
+    "--s-6",
+    "--s-8"
+   ],
+   "screens": {
+    "total": 16,
+    "phone": 14,
+    "desk": 1,
+    "duo": 1,
+    "examples": [
+     "หน้าเสริม · หน้าสินค้า · จากไลฟ์",
+     "F3 หน้าสินค้า",
+     "F3 หน้าสินค้า · บันทึกในรายการโปรด"
+    ]
+   },
+   "keywords": [
+    "gallery",
+    "carousel",
+    "product info",
+    "hero"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "ProductGallery",
+     "ProductInfo"
+    ],
+    "flutter": [
+     "TmProductGallery",
+     "TmProductInfo"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "shop-row",
+   "n": "2.2",
+   "step": 2,
+   "name": {
+    "en": "Shop Row",
+    "th": "แถวร้าน"
+   },
+   "parts": [
+    "Shop Row"
+   ],
+   "why": "บอกว่าใครขาย ใช้ในหน้าสินค้าและหน้าเสริม",
+   "proto": {
+    "blocks": [
+     "i-shoprow"
+    ],
+    "classes": [
+     ".i-shoprow",
+     ".i-shoprow__who",
+     ".i-shoprow__name"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Badge",
+     "values": [
+      "Official",
+      "None"
+     ],
+     "default": "Official",
+     "kind": "variant",
+     "suggest": {
+      "react": "badge",
+      "flutter": "badge"
+     }
+    },
+    {
+     "name": "Action",
+     "values": [
+      "Button"
+     ],
+     "default": "Button",
+     "kind": "slot",
+     "suggest": {
+      "react": "action",
+      "flutter": "action"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--c-ink",
+    "--c-line",
+    "--fs-14",
+    "--fs-16",
+    "--lh-20",
+    "--lh-24",
+    "--r-10",
+    "--r-12",
+    "--s-4"
+   ],
+   "screens": {
+    "total": 15,
+    "phone": 15,
+    "desk": 0,
+    "duo": 0,
+    "examples": [
+     "หน้าเสริม · หน้าสินค้า · จากไลฟ์",
+     "หน้าเสริม · เรื่องเล่า",
+     "F3 หน้าสินค้า"
+    ]
+   },
+   "keywords": [
+    "shop",
+    "store",
+    "seller",
+    "merchant"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "ShopRow"
+    ],
+    "flutter": [
+     "TmShopRow"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "option-sheet",
+   "n": "2.3",
+   "step": 2,
+   "name": {
+    "en": "Option Sheet · Stepper",
+    "th": "ตัวเลือก และจำนวน"
+   },
+   "parts": [
+    "Option Sheet",
+    "Stepper"
+   ],
+   "why": "ก่อนลงตะกร้าทุกครั้ง และในตะกร้าเอง",
+   "proto": {
+    "blocks": [
+     "i-qty",
+     "a-optsheet",
+     "i-opts"
+    ],
+    "classes": [
+     ".i-qty",
+     ".a-optsheet",
+     ".i-opts",
+     ".i-opt"
+    ],
+    "notes": [
+     "data-min",
+     "data-max"
+    ]
+   },
+   "props": [
+    {
+     "name": "Stepper",
+     "values": [
+      "Min",
+      "Mid",
+      "Max"
+     ],
+     "default": "Mid",
+     "kind": "state",
+     "suggest": {
+      "react": "stepper",
+      "flutter": "stepper"
+     }
+    },
+    {
+     "name": "Sheet",
+     "values": [
+      "Options + Qty"
+     ],
+     "default": "Options + Qty",
+     "kind": "slot",
+     "suggest": {
+      "react": "sheet",
+      "flutter": "sheet"
+     }
+    }
+   ],
+   "rules": [
+    "ปุ่ม − + แตะได้ 44",
+    "ปิดใช้ ไอคอนสีจาง"
+   ],
+   "tokens": [
+    "--c-control",
+    "--c-faint",
+    "--c-ink",
+    "--c-line",
+    "--e-live-lh-32",
+    "--fs-14",
+    "--ic-16",
+    "--lh-20",
+    "--r-12",
+    "--r-8",
+    "--s-12",
+    "--s-16",
+    "--s-4",
+    "--s-48",
+    "--s-8"
+   ],
+   "screens": {
+    "total": 21,
+    "phone": 19,
+    "desk": 1,
+    "duo": 1,
+    "examples": [
+     "หน้าเสริม · หน้าสินค้า · จากไลฟ์",
+     "B2 ซื้อในไลฟ์",
+     "B2 ซื้อในไลฟ์ · เลือกวิธีชำระเงิน"
+    ]
+   },
+   "keywords": [
+    "stepper",
+    "quantity",
+    "qty",
+    "variant picker",
+    "counter"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "OptionSheet",
+     "Stepper"
+    ],
+    "flutter": [
+     "TmOptionSheet",
+     "TmStepper"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "cart-item",
+   "n": "2.4",
+   "step": 2,
+   "name": {
+    "en": "Cart Item · Shop Group",
+    "th": "แถวสินค้าในตะกร้า"
+   },
+   "parts": [
+    "Cart Item",
+    "Shop Group"
+   ],
+   "why": "ตะกร้า ชำระเงิน และตะกร้าในไลฟ์ใช้แถวเดียวกัน",
+   "proto": {
+    "blocks": [
+     "i-item",
+     "i-shopgrp"
+    ],
+    "classes": [
+     ".i-item",
+     ".i-shopgrp",
+     ".i-item--now",
+     ".i-item__opt",
+     ".i-check",
+     ".i-qty"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Selected",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "selected",
+      "flutter": "selected"
+     }
+    },
+    {
+     "name": "Stepper",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "stepper",
+      "flutter": "stepper"
+     }
+    },
+    {
+     "name": "Variant",
+     "values": [
+      "Cart",
+      "Checkout",
+      "Live"
+     ],
+     "default": "Cart",
+     "kind": "variant",
+     "suggest": {
+      "react": "variant",
+      "flutter": "variant"
+     }
+    }
+   ],
+   "rules": [
+    "จัดกลุ่มตามร้าน หัวกลุ่มติ๊กได้ทั้งร้าน"
+   ],
+   "tokens": [
+    "--c-grey",
+    "--c-ink",
+    "--c-line",
+    "--c-muted",
+    "--c-red",
+    "--c-red-t",
+    "--c-tab",
+    "--c-tint",
+    "--c-white",
+    "--e-check-top",
+    "--e-live-lh-19",
+    "--fs-12",
+    "--fs-14",
+    "--ic-12",
+    "--ic-14",
+    "--ic-16",
+    "--lh-18",
+    "--lh-20",
+    "--r-10",
+    "--r-6",
+    "--s-10",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-20",
+    "--s-4",
+    "--s-6",
+    "--s-8",
+    "--tap"
+   ],
+   "screens": {
+    "total": 23,
+    "phone": 21,
+    "desk": 1,
+    "duo": 1,
+    "examples": [
+     "B2 ซื้อในไลฟ์",
+     "B2 ซื้อในไลฟ์ · เลือกวิธีชำระเงิน",
+     "B2 ซื้อในไลฟ์ · เลือกที่อยู่"
+    ]
+   },
+   "keywords": [
+    "cart",
+    "basket",
+    "line item"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "CartItem",
+     "ShopGroup"
+    ],
+    "flutter": [
+     "TmCartItem",
+     "TmShopGroup"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "checkout-rows",
+   "n": "2.5",
+   "step": 2,
+   "name": {
+    "en": "Address · Coupon Row · Payment",
+    "th": "ที่อยู่ คูปอง วิธีจ่าย"
+   },
+   "parts": [
+    "Address",
+    "Coupon Row",
+    "Payment"
+   ],
+   "why": "3 แถวในหน้าชำระเงิน ที่คนต้องเลือกก่อนจ่าย",
+   "proto": {
+    "blocks": [
+     "i-coupon",
+     "i-radios",
+     "i-pp",
+     "a-addr"
+    ],
+    "classes": [
+     ".i-coupon",
+     ".i-radios",
+     ".i-pp",
+     ".a-addr",
+     ".i-coupon--off",
+     ".i-radio",
+     ".i-pp--visa",
+     ".i-pp--cod"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Coupon",
+     "values": [
+      "On",
+      "Off"
+     ],
+     "default": "On",
+     "kind": "state",
+     "suggest": {
+      "react": "coupon",
+      "flutter": "coupon"
+     }
+    },
+    {
+     "name": "Payment",
+     "values": [
+      "PromptPay",
+      "Card",
+      "Cash"
+     ],
+     "default": "PromptPay",
+     "kind": "variant",
+     "suggest": {
+      "react": "payment",
+      "flutter": "payment"
+     }
+    },
+    {
+     "name": "Selected",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "selected",
+      "flutter": "selected"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--c-brand-pp",
+    "--c-brand-visa",
+    "--c-control",
+    "--c-faint",
+    "--c-ink-2",
+    "--c-muted",
+    "--c-red",
+    "--c-red-200",
+    "--c-tint",
+    "--c-white",
+    "--fs-12",
+    "--ic-20",
+    "--lh-18",
+    "--r-10",
+    "--r-12",
+    "--s-10",
+    "--s-12",
+    "--s-6",
+    "--s-8"
+   ],
+   "screens": {
+    "total": 22,
+    "phone": 20,
+    "desk": 1,
+    "duo": 1,
+    "examples": [
+     "B2 ซื้อในไลฟ์",
+     "B2 ซื้อในไลฟ์ · เลือกวิธีชำระเงิน",
+     "B2 ซื้อในไลฟ์ · เลือกที่อยู่"
+    ]
+   },
+   "keywords": [
+    "address",
+    "coupon",
+    "voucher",
+    "payment",
+    "promptpay"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "Address",
+     "CouponRow",
+     "Payment"
+    ],
+    "flutter": [
+     "TmAddress",
+     "TmCouponRow",
+     "TmPayment"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "summary-bars",
+   "n": "2.6",
+   "step": 2,
+   "name": {
+    "en": "Summary · Pay Bar · Action Bar",
+    "th": "สรุปยอด และแถบล่าง"
+   },
+   "parts": [
+    "Summary",
+    "Pay Bar",
+    "Action Bar"
+   ],
+   "why": "ทำครั้งเดียว ใช้ทุกหน้าที่มีปุ่มซื้อหรือปุ่มจ่าย",
+   "proto": {
+    "blocks": [
+     "i-actionbar",
+     "i-paybar",
+     "i-kv"
+    ],
+    "classes": [
+     ".i-actionbar",
+     ".i-paybar",
+     ".i-kv",
+     ".i-kv--minus",
+     ".i-kv--total"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Bar",
+     "values": [
+      "Two buttons",
+      "One button",
+      "Total + button"
+     ],
+     "default": "Two buttons",
+     "kind": "variant",
+     "suggest": {
+      "react": "bar",
+      "flutter": "bar"
+     }
+    },
+    {
+     "name": "Check all",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "false",
+     "kind": "boolean",
+     "suggest": {
+      "react": "checkAll",
+      "flutter": "checkAll"
+     }
+    },
+    {
+     "name": "Row",
+     "values": [
+      "Default",
+      "Minus",
+      "Total"
+     ],
+     "default": "Default",
+     "kind": "variant",
+     "suggest": {
+      "react": "row",
+      "flutter": "row"
+     }
+    }
+   ],
+   "rules": [
+    "แสดงค่าส่งก่อนกดซื้อเสมอ",
+    "ส่วนลดใช้ −฿ สีแดงเข้ม"
+   ],
+   "tokens": [
+    "--c-ink",
+    "--c-line",
+    "--c-red-t",
+    "--c-white",
+    "--fs-14",
+    "--fs-16",
+    "--lh-22",
+    "--lh-24",
+    "--r-10",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-4",
+    "--s-6",
+    "--s-8",
+    "--z-bar"
+   ],
+   "screens": {
+    "total": 62,
+    "phone": 61,
+    "desk": 0,
+    "duo": 1,
+    "examples": [
+     "หน้าเสริม · หน้าสินค้า · จากไลฟ์",
+     "B2 ซื้อในไลฟ์",
+     "B2 ซื้อในไลฟ์ · เลือกวิธีชำระเงิน"
+    ]
+   },
+   "keywords": [
+    "summary",
+    "total",
+    "paybar",
+    "bottom bar",
+    "checkout bar"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "Summary",
+     "PayBar",
+     "ActionBar"
+    ],
+    "flutter": [
+     "TmSummary",
+     "TmPayBar",
+     "TmActionBar"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "escrow-note",
+   "n": "2.7",
+   "step": 2,
+   "name": {
+    "en": "Escrow Note",
+    "th": "โน้ตถือเงิน"
+   },
+   "parts": [
+    "Escrow Note"
+   ],
+   "why": "บอกว่าเงินปลอดภัย จนกว่าจะได้ของ",
+   "proto": {
+    "blocks": [
+     "i-escrow",
+     "d-escrow",
+     "d-foot",
+     "d-badge"
+    ],
+    "classes": [
+     ".i-escrow",
+     ".d-escrow",
+     ".d-foot",
+     ".d-badge",
+     ".d-escrow--white"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Variant",
+     "values": [
+      "Tint",
+      "White",
+      "Footer"
+     ],
+     "default": "Tint",
+     "kind": "variant",
+     "suggest": {
+      "react": "variant",
+      "flutter": "variant"
+     }
+    },
+    {
+     "name": "Amount",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "amount",
+      "flutter": "amount"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--c-ink",
+    "--c-red",
+    "--c-tint",
+    "--c-white",
+    "--fs-14",
+    "--ic-22",
+    "--ic-28",
+    "--lh-20",
+    "--r-12",
+    "--r-16",
+    "--r-pill",
+    "--s-12",
+    "--s-16",
+    "--s-20",
+    "--s-8"
+   ],
+   "screens": {
+    "total": 46,
+    "phone": 42,
+    "desk": 2,
+    "duo": 2,
+    "examples": [
+     "หน้าเสริม · หน้าสินค้า · จากไลฟ์",
+     "C5 ข้อมูลร้าน",
+     "A7 ชำระเงิน"
+    ]
+   },
+   "keywords": [
+    "escrow",
+    "protection",
+    "hold money"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "EscrowNote"
+    ],
+    "flutter": [
+     "TmEscrowNote"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "order-tiles",
+   "n": "2.8",
+   "step": 2,
+   "name": {
+    "en": "Order Status Tiles · Order Card",
+    "th": "คำสั่งซื้อ"
+   },
+   "parts": [
+    "Order Status Tiles",
+    "Order Card"
+   ],
+   "why": "หน้าคำสั่งซื้อ และสถานะที่คนกลับมาดูบ่อย",
+   "proto": {
+    "blocks": [
+     "d-tabs",
+     "d-ord",
+     "d-pill"
+    ],
+    "classes": [
+     ".d-tabs",
+     ".d-ord",
+     ".d-pill",
+     ".d-tab",
+     ".d-cnt",
+     ".d-ord--now",
+     ".d-pill--act",
+     ".d-pill--done"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Tile",
+     "values": [
+      "All",
+      "To pay",
+      "Preparing",
+      "Shipping",
+      "Done"
+     ],
+     "default": "All",
+     "kind": "variant",
+     "suggest": {
+      "react": "tile",
+      "flutter": "tile"
+     }
+    },
+    {
+     "name": "Tile state",
+     "values": [
+      "Off",
+      "On"
+     ],
+     "default": "On",
+     "kind": "state",
+     "suggest": {
+      "react": "tileState",
+      "flutter": "tileState"
+     }
+    },
+    {
+     "name": "Card status",
+     "values": [
+      "To pay",
+      "Preparing",
+      "Shipping",
+      "Done"
+     ],
+     "default": "To pay",
+     "kind": "variant",
+     "suggest": {
+      "react": "cardStatus",
+      "flutter": "cardStatus"
+     }
+    },
+    {
+     "name": "Card size",
+     "values": [
+      "Default",
+      "Now"
+     ],
+     "default": "Default",
+     "kind": "variant",
+     "suggest": {
+      "react": "cardSize",
+      "flutter": "cardSize"
+     }
+    }
+   ],
+   "rules": [
+    "แตะช่องแล้วกรองในหน้าเดิม",
+    "ตัวเลขเป็น 0 ไม่แสดง"
+   ],
+   "tokens": [
+    "--c-grey",
+    "--c-ink",
+    "--c-line",
+    "--c-muted",
+    "--c-ok",
+    "--c-ok-tint",
+    "--c-red-t",
+    "--c-tint",
+    "--c-white",
+    "--fs-12",
+    "--fs-14",
+    "--fs-16",
+    "--lh-18",
+    "--lh-20",
+    "--lh-24",
+    "--r-10",
+    "--r-16",
+    "--r-6",
+    "--r-pill",
+    "--s-10",
+    "--s-12",
+    "--s-16",
+    "--s-4",
+    "--s-8",
+    "--sh-card",
+    "--sh-search"
+   ],
+   "screens": {
+    "total": 23,
+    "phone": 21,
+    "desk": 1,
+    "duo": 1,
+    "examples": [
+     "D1 คำสั่งซื้อ",
+     "D1 คำสั่งซื้อ · แท็บต้องชำระ",
+     "D1 คำสั่งซื้อ · แท็บเตรียมส่ง"
+    ]
+   },
+   "keywords": [
+    "order",
+    "status",
+    "orders"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "OrderStatusTiles",
+     "OrderCard"
+    ],
+    "flutter": [
+     "TmOrderStatusTiles",
+     "TmOrderCard"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "order-tracking",
+   "n": "2.9",
+   "step": 2,
+   "name": {
+    "en": "Order Status Hero · Tracking",
+    "th": "ติดตามพัสดุ"
+   },
+   "parts": [
+    "Order Status Hero",
+    "Tracking"
+   ],
+   "why": "หน้ารายละเอียดคำสั่งซื้อ ทุกสถานะใช้ส่วนนี้",
+   "proto": {
+    "blocks": [
+     "d-hero",
+     "d-steps",
+     "d-tl",
+     "d-parcel"
+    ],
+    "classes": [
+     ".d-hero",
+     ".d-steps",
+     ".d-tl",
+     ".d-parcel"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Step",
+     "values": [
+      "Paid",
+      "Preparing",
+      "Shipping",
+      "Done"
+     ],
+     "default": "Shipping",
+     "kind": "variant",
+     "suggest": {
+      "react": "step",
+      "flutter": "step"
+     }
+    },
+    {
+     "name": "Timeline rows",
+     "values": [
+      "1 ถึง N"
+     ],
+     "default": "1 ถึง N",
+     "kind": "slot",
+     "suggest": {
+      "react": "timelineRows",
+      "flutter": "timelineRows"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--bw-2",
+    "--bw-3",
+    "--c-idle",
+    "--c-ink",
+    "--c-line",
+    "--c-muted",
+    "--c-red",
+    "--c-red-200",
+    "--c-red-t",
+    "--c-tint",
+    "--c-white",
+    "--fs-12",
+    "--fs-14",
+    "--ic-14",
+    "--lh-18",
+    "--lh-20",
+    "--r-12",
+    "--r-pill",
+    "--s-12",
+    "--s-16",
+    "--s-4",
+    "--s-8",
+    "--z-1"
+   ],
+   "screens": {
+    "total": 7,
+    "phone": 6,
+    "desk": 0,
+    "duo": 1,
+    "examples": [
+     "หน้าเสริม · รายละเอียดคำสั่งซื้อ",
+     "D2 ติดตามพัสดุ",
+     "D2 ติดตามพัสดุ · คัดลอกเลขพัสดุแล้ว"
+    ]
+   },
+   "keywords": [
+    "tracking",
+    "parcel",
+    "timeline",
+    "shipment"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "OrderStatusHero",
+     "Tracking"
+    ],
+    "flutter": [
+     "TmOrderStatusHero",
+     "TmTracking"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "review-clip",
+   "n": "2.10",
+   "step": 2,
+   "name": {
+    "en": "Review Clip · Star Rating",
+    "th": "รีวิว"
+   },
+   "parts": [
+    "Review Clip",
+    "Star Rating"
+   ],
+   "why": "รีวิวจริงช่วยตัดสินใจ และคนเขียนรีวิวหลังได้ของ",
+   "proto": {
+    "blocks": [
+     "f-rv",
+     "i-rate",
+     "d-rate"
+    ],
+    "classes": [
+     ".f-rv",
+     ".i-rate",
+     ".d-rate",
+     ".f-rvs",
+     ".i-rate__star",
+     ".is-lit"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Stars",
+     "values": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "default": "5",
+     "kind": "variant",
+     "suggest": {
+      "react": "stars",
+      "flutter": "stars"
+     }
+    },
+    {
+     "name": "Clip",
+     "values": [
+      "Video"
+     ],
+     "default": "Video",
+     "kind": "slot",
+     "suggest": {
+      "react": "clip",
+      "flutter": "clip"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--c-control",
+    "--c-img",
+    "--c-red-t",
+    "--c-star",
+    "--c-white",
+    "--e-play-badge",
+    "--fs-14",
+    "--fs-16",
+    "--g-rv-fade",
+    "--ic-32",
+    "--lh-20",
+    "--lh-24",
+    "--r-12",
+    "--s-4",
+    "--s-8",
+    "--tap"
+   ],
+   "screens": {
+    "total": 13,
+    "phone": 11,
+    "desk": 1,
+    "duo": 1,
+    "examples": [
+     "F3 หน้าสินค้า",
+     "F3 หน้าสินค้า · บันทึกในรายการโปรด",
+     "F3 หน้าสินค้า · รูปถัดไป"
+    ]
+   },
+   "keywords": [
+    "review",
+    "rate",
+    "rating input"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "ReviewClip",
+     "StarRating"
+    ],
+    "flutter": [
+     "TmReviewClip",
+     "TmStarRating"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "avatar",
+   "n": "3.1",
+   "step": 3,
+   "name": {
+    "en": "Avatar · Story Ring",
+    "th": "รูปโปรไฟล์ และสตอรี่"
+   },
+   "parts": [
+    "Avatar",
+    "Story Ring"
+   ],
+   "why": "คน ร้าน และไลฟ์ ใช้รูปวงกลมชุดเดียว",
+   "proto": {
+    "blocks": [
+     "i-story",
+     "i-av",
+     "i-stories",
+     "i-livetag"
+    ],
+    "classes": [
+     ".i-story",
+     ".i-av",
+     ".i-stories",
+     ".i-livetag",
+     ".i-av--20",
+     ".i-av--32",
+     ".i-av--40",
+     ".i-av--56",
+     ".i-story--seen"
+    ],
+    "notes": [
+     "is-live"
+    ]
+   },
+   "props": [
+    {
+     "name": "Size",
+     "values": [
+      "20",
+      "24",
+      "32",
+      "40",
+      "56",
+      "78"
+     ],
+     "default": "40",
+     "kind": "variant",
+     "suggest": {
+      "react": "size",
+      "flutter": "size"
+     }
+    },
+    {
+     "name": "Ring",
+     "values": [
+      "None",
+      "Story",
+      "Live",
+      "Seen"
+     ],
+     "default": "None",
+     "kind": "variant",
+     "suggest": {
+      "react": "ring",
+      "flutter": "ring"
+     }
+    },
+    {
+     "name": "Shape",
+     "values": [
+      "Person",
+      "Shop"
+     ],
+     "default": "Person",
+     "kind": "variant",
+     "suggest": {
+      "react": "shape",
+      "flutter": "shape"
+     }
+    }
+   ],
+   "rules": [
+    "คนเป็นวงกลม",
+    "ร้านเป็นสี่เหลี่ยมมุมมน"
+   ],
+   "tokens": [
+    "--bw-15",
+    "--bw-2",
+    "--c-img",
+    "--c-ink",
+    "--c-line",
+    "--c-red",
+    "--c-white",
+    "--e-ring-gap",
+    "--fs-12",
+    "--ic-12",
+    "--lh-18",
+    "--r-6",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-4",
+    "--s-6",
+    "--s-8"
+   ],
+   "screens": {
+    "total": 24,
+    "phone": 13,
+    "desk": 7,
+    "duo": 4,
+    "examples": [
+     "F1 หน้าแรก",
+     "F1 หน้าแรก · หมวดกีฬา",
+     "F1 หน้าแรก · ดูสตอรี่"
+    ]
+   },
+   "keywords": [
+    "avatar",
+    "profile picture",
+    "story",
+    "ring"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "Avatar",
+     "StoryRing"
+    ],
+    "flutter": [
+     "TmAvatar",
+     "TmStoryRing"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "post-card",
+   "n": "3.2",
+   "step": 3,
+   "name": {
+    "en": "Post Card",
+    "th": "โพสต์"
+   },
+   "parts": [
+    "Post Card"
+   ],
+   "why": "ฟีด Discover โพสต์ และโปรไฟล์ มีหรือไม่มีสินค้าก็ได้",
+   "proto": {
+    "blocks": [
+     "i-post",
+     "i-acts",
+     "i-act"
+    ],
+    "classes": [
+     ".i-post",
+     ".i-acts",
+     ".i-act",
+     ".i-post__hd",
+     ".i-post__media",
+     ".i-post__cap",
+     ".i-post__tags",
+     ".i-act--like"
+    ],
+    "notes": [
+     "aria-pressed"
+    ]
+   },
+   "props": [
+    {
+     "name": "Product",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "product",
+      "flutter": "product"
+     }
+    },
+    {
+     "name": "Media",
+     "values": [
+      "Photo",
+      "Video"
+     ],
+     "default": "Photo",
+     "kind": "variant",
+     "suggest": {
+      "react": "media",
+      "flutter": "media"
+     }
+    },
+    {
+     "name": "Liked",
+     "values": [
+      "false",
+      "true"
+     ],
+     "default": "false",
+     "kind": "boolean",
+     "suggest": {
+      "react": "liked",
+      "flutter": "liked"
+     }
+    },
+    {
+     "name": "Saved",
+     "values": [
+      "false",
+      "true"
+     ],
+     "default": "false",
+     "kind": "boolean",
+     "suggest": {
+      "react": "saved",
+      "flutter": "saved"
+     }
+    }
+   ],
+   "rules": [
+    "ไม่มีสินค้า ไม่มีการ์ด ไม่มีที่ว่าง"
+   ],
+   "tokens": [
+    "--c-glass",
+    "--c-ink",
+    "--c-muted",
+    "--c-red",
+    "--c-white",
+    "--fs-12",
+    "--fs-14",
+    "--fs-16",
+    "--gutter",
+    "--ic-16",
+    "--ic-18",
+    "--ic-22",
+    "--lh-18",
+    "--lh-20",
+    "--lh-22",
+    "--lh-24",
+    "--r-6",
+    "--r-8",
+    "--r-pill",
+    "--s-12",
+    "--s-16",
+    "--s-4",
+    "--s-56",
+    "--s-8",
+    "--tap"
+   ],
+   "screens": {
+    "total": 17,
+    "phone": 15,
+    "desk": 1,
+    "duo": 1,
+    "examples": [
+     "F2 Discover",
+     "F2 Discover · แท็บกำลังติดตาม",
+     "F2 Discover · ติดตามครีเอเตอร์"
+    ]
+   },
+   "keywords": [
+    "post",
+    "feed item",
+    "like",
+    "share"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "PostCard"
+    ],
+    "flutter": [
+     "TmPostCard"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "pinned-product",
+   "n": "3.3",
+   "step": 3,
+   "name": {
+    "en": "Pinned Product",
+    "th": "สินค้าที่แนบ"
+   },
+   "parts": [
+    "Pinned Product"
+   ],
+   "why": "ทางจากโพสต์ Reels และไลฟ์ ไปสู่การซื้อ",
+   "proto": {
+    "blocks": [
+     "i-ptag",
+     "fx-pc",
+     "i-ptagwrap"
+    ],
+    "classes": [
+     ".i-ptag",
+     ".fx-pc",
+     ".i-ptagwrap",
+     ".i-ptag__cart",
+     ".fx-pc__off",
+     ".i-lcardwrap"
+    ],
+    "notes": [
+     "ไลฟ์"
+    ]
+   },
+   "props": [
+    {
+     "name": "Surface",
+     "values": [
+      "Post",
+      "Live"
+     ],
+     "default": "Post",
+     "kind": "variant",
+     "suggest": {
+      "react": "surface",
+      "flutter": "surface"
+     }
+    },
+    {
+     "name": "Badge",
+     "values": [
+      "Official",
+      "None"
+     ],
+     "default": "Official",
+     "kind": "variant",
+     "suggest": {
+      "react": "badge",
+      "flutter": "badge"
+     }
+    },
+    {
+     "name": "Cart",
+     "values": [
+      "Default",
+      "Pressed"
+     ],
+     "default": "Default",
+     "kind": "state",
+     "suggest": {
+      "react": "cart",
+      "flutter": "cart"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--c-ink",
+    "--c-line",
+    "--c-muted",
+    "--c-red",
+    "--c-red-t",
+    "--c-white",
+    "--e-live-lh-16",
+    "--e-live-lh-19",
+    "--e-live-s-5",
+    "--fs-12",
+    "--fs-14",
+    "--ic-20",
+    "--lh-18",
+    "--lh-20",
+    "--r-10",
+    "--r-12",
+    "--r-pill",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-20",
+    "--s-4",
+    "--s-56",
+    "--s-8"
+   ],
+   "screens": {
+    "total": 36,
+    "phone": 32,
+    "desk": 2,
+    "duo": 2,
+    "examples": [
+     "B2 ซื้อในไลฟ์",
+     "B2 ซื้อในไลฟ์ · เลือกวิธีชำระเงิน",
+     "B2 ซื้อในไลฟ์ · เลือกที่อยู่"
+    ]
+   },
+   "keywords": [
+    "pinned",
+    "tagged product",
+    "product tag"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "PinnedProduct"
+    ],
+    "flutter": [
+     "TmPinnedProduct"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "compose-comment",
+   "n": "3.4",
+   "step": 3,
+   "name": {
+    "en": "Compose Box · Comment · Comment Bar",
+    "th": "ช่องเขียน และความคิดเห็น"
+   },
+   "parts": [
+    "Compose Box",
+    "Comment",
+    "Comment Bar"
+   ],
+   "why": "คนเริ่มคุยกันที่นี่ ทั้งฟีด โพสต์ และ Reels",
+   "proto": {
+    "blocks": [
+     "c-cmt",
+     "fx-wr",
+     "c-comp",
+     "c-cgroup"
+    ],
+    "classes": [
+     ".c-cmt",
+     ".fx-wr",
+     ".c-comp",
+     ".c-cgroup",
+     ".c-cmt--reply",
+     ".i-input"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Comment",
+     "values": [
+      "Default",
+      "Reply"
+     ],
+     "default": "Default",
+     "kind": "variant",
+     "suggest": {
+      "react": "comment",
+      "flutter": "comment"
+     }
+    },
+    {
+     "name": "Bar",
+     "values": [
+      "Empty",
+      "Typing"
+     ],
+     "default": "Empty",
+     "kind": "state",
+     "suggest": {
+      "react": "bar",
+      "flutter": "bar"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--c-disabled",
+    "--c-faint",
+    "--c-grey",
+    "--c-ink",
+    "--c-line",
+    "--c-muted",
+    "--c-red",
+    "--c-red-wash",
+    "--c-white",
+    "--cmt-indent",
+    "--fs-12",
+    "--fs-14",
+    "--gutter",
+    "--ic-16",
+    "--ic-18",
+    "--ic-20",
+    "--lh-18",
+    "--lh-20",
+    "--lh-22",
+    "--r-24",
+    "--r-pill",
+    "--s-12",
+    "--s-16",
+    "--s-4",
+    "--s-48",
+    "--s-8",
+    "--sh-soft",
+    "--tap",
+    "--w-screen",
+    "--z-bar"
+   ],
+   "screens": {
+    "total": 24,
+    "phone": 23,
+    "desk": 0,
+    "duo": 1,
+    "examples": [
+     "F2 Discover",
+     "F2 Discover · แท็บกำลังติดตาม",
+     "F2 Discover · ติดตามครีเอเตอร์"
+    ]
+   },
+   "keywords": [
+    "comment",
+    "compose",
+    "reply",
+    "write"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "ComposeBox",
+     "Comment",
+     "CommentBar"
+    ],
+    "flutter": [
+     "TmComposeBox",
+     "TmComment",
+     "TmCommentBar"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "video-card",
+   "n": "3.5",
+   "step": 3,
+   "name": {
+    "en": "Video Card",
+    "th": "การ์ดวิดีโอ"
+   },
+   "parts": [
+    "Video Card"
+   ],
+   "why": "วิดีโอรีวิวในฟีด พร้อมสินค้าใต้คลิป",
+   "proto": {
+    "blocks": [
+     "i-vid",
+     "i-vids"
+    ],
+    "classes": [
+     ".i-vid",
+     ".i-vids",
+     ".i-vid__views",
+     ".i-aff",
+     ".i-vid__row"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Affiliate",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "affiliate",
+      "flutter": "affiliate"
+     }
+    },
+    {
+     "name": "Product",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "product",
+      "flutter": "product"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--c-glass",
+    "--c-ink-2",
+    "--c-white",
+    "--e-play-badge",
+    "--fs-12",
+    "--fs-14",
+    "--ic-16",
+    "--lh-18",
+    "--lh-20",
+    "--r-12",
+    "--r-6",
+    "--r-8",
+    "--s-12",
+    "--s-16",
+    "--s-4",
+    "--s-6",
+    "--s-8",
+    "--sh-card"
+   ],
+   "screens": {
+    "total": 10,
+    "phone": 8,
+    "desk": 1,
+    "duo": 1,
+    "examples": [
+     "F2 Discover",
+     "F2 Discover · แท็บกำลังติดตาม",
+     "F2 Discover · ติดตามครีเอเตอร์"
+    ]
+   },
+   "keywords": [
+    "video",
+    "clip",
+    "affiliate"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "VideoCard"
+    ],
+    "flutter": [
+     "TmVideoCard"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "live-overlay",
+   "n": "3.6",
+   "step": 3,
+   "name": {
+    "en": "Live Overlay",
+    "th": "ชั้นบนไลฟ์"
+   },
+   "parts": [
+    "Live Overlay"
+   ],
+   "why": "หน้าไลฟ์ปัจจุบันคือแบบอ้างอิง ปรับได้ถ้ามีเหตุผล UX",
+   "proto": {
+    "blocks": [
+     "i-live",
+     "i-lhost",
+     "i-onair",
+     "i-views",
+     "i-lchat",
+     "i-lmsg",
+     "i-lcardwrap",
+     "i-lbar"
+    ],
+    "classes": [
+     ".i-live",
+     ".i-lhost",
+     ".i-onair",
+     ".i-views",
+     ".i-lchat",
+     ".i-lmsg",
+     ".i-lcardwrap",
+     ".i-lbar",
+     ".i-lbtn",
+     ".i-lin"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Host",
+     "values": [
+      "Following",
+      "Not following"
+     ],
+     "default": "Not following",
+     "kind": "variant",
+     "suggest": {
+      "react": "host",
+      "flutter": "host"
+     }
+    },
+    {
+     "name": "Message",
+     "values": [
+      "Text",
+      "Sticker",
+      "Order",
+      "Mine"
+     ],
+     "default": "Text",
+     "kind": "variant",
+     "suggest": {
+      "react": "message",
+      "flutter": "message"
+     }
+    },
+    {
+     "name": "Bag count",
+     "values": [
+      "0",
+      "N"
+     ],
+     "default": "N",
+     "kind": "variant",
+     "suggest": {
+      "react": "bagCount",
+      "flutter": "bagCount"
+     }
+    }
+   ],
+   "rules": [
+    "พื้นมืดและป้ายความมั่นใจต้องอยู่ครบ",
+    "สติกเกอร์มาสคอต เฉพาะในแชทไลฟ์"
+   ],
+   "tokens": [
+    "--bw-3",
+    "--c-glass",
+    "--c-glass-white",
+    "--c-ink",
+    "--c-red",
+    "--c-shade",
+    "--c-white",
+    "--e-live-fade-34",
+    "--e-live-fade-50",
+    "--e-live-glass-40",
+    "--e-live-lh-16",
+    "--e-live-lh-19",
+    "--e-live-lh-21",
+    "--e-live-mine",
+    "--e-live-order",
+    "--e-live-s-15",
+    "--e-live-s-3",
+    "--e-live-s-5",
+    "--e-live-stage",
+    "--fs-12",
+    "--fs-13",
+    "--fs-14",
+    "--fs-16",
+    "--ic-16",
+    "--lh-18",
+    "--lh-20",
+    "--r-12",
+    "--r-20",
+    "--r-6",
+    "--r-pill",
+    "--s-10",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-20",
+    "--s-4",
+    "--s-48",
+    "--s-6",
+    "--s-8",
+    "--tap",
+    "--z-1"
+   ],
+   "screens": {
+    "total": 21,
+    "phone": 18,
+    "desk": 1,
+    "duo": 2,
+    "examples": [
+     "B2 ซื้อในไลฟ์",
+     "B2 ซื้อในไลฟ์ · เลือกวิธีชำระเงิน",
+     "B2 ซื้อในไลฟ์ · เลือกที่อยู่"
+    ]
+   },
+   "keywords": [
+    "live",
+    "stream",
+    "broadcast"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "LiveOverlay"
+    ],
+    "flutter": [
+     "TmLiveOverlay"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "reels-overlay",
+   "n": "3.7",
+   "step": 3,
+   "name": {
+    "en": "Reels Overlay",
+    "th": "Reels"
+   },
+   "parts": [
+    "Reels Overlay"
+   ],
+   "why": "วิดีโอเต็มจอ ปุ่มด้านขวาและสินค้าด้านล่าง",
+   "proto": {
+    "blocks": [
+     "c-reel",
+     "c-rail"
+    ],
+    "classes": [
+     ".c-reel",
+     ".c-rail",
+     ".c-rail__btn",
+     ".c-rail__btn--like",
+     ".c-reel__who",
+     ".c-reel__cap"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Liked",
+     "values": [
+      "false",
+      "true"
+     ],
+     "default": "false",
+     "kind": "boolean",
+     "suggest": {
+      "react": "liked",
+      "flutter": "liked"
+     }
+    },
+    {
+     "name": "Product",
+     "values": [
+      "true",
+      "false"
+     ],
+     "default": "true",
+     "kind": "boolean",
+     "suggest": {
+      "react": "product",
+      "flutter": "product"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--bw-2",
+    "--c-glass",
+    "--c-media",
+    "--c-red-50",
+    "--c-track",
+    "--c-white",
+    "--fs-12",
+    "--fs-14",
+    "--fs-16",
+    "--fs-18",
+    "--g-reel-shade",
+    "--g-shade-top",
+    "--ic-16",
+    "--ic-26",
+    "--lh-18",
+    "--lh-20",
+    "--lh-24",
+    "--lh-26",
+    "--r-pill",
+    "--s-12",
+    "--s-2",
+    "--s-4",
+    "--s-8",
+    "--tap"
+   ],
+   "screens": {
+    "total": 4,
+    "phone": 4,
+    "desk": 0,
+    "duo": 0,
+    "examples": [
+     "C2 วิดีโอรีวิว (Reels)",
+     "C2 วิดีโอรีวิว (Reels) · ความคิดเห็น",
+     "C2 วิดีโอรีวิว (Reels) · ส่งความคิดเห็นแล้ว"
+    ]
+   },
+   "keywords": [
+    "reel",
+    "reels",
+    "short video"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "ReelsOverlay"
+    ],
+    "flutter": [
+     "TmReelsOverlay"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "shop-header",
+   "n": "3.8",
+   "step": 3,
+   "name": {
+    "en": "Shop Header · Store Card",
+    "th": "หัวร้าน และการ์ดร้าน"
+   },
+   "parts": [
+    "Shop Header",
+    "Store Card"
+   ],
+   "why": "หน้าร้าน แบรนด์ดี และร้านในตัวแต่งร้าน",
+   "proto": {
+    "blocks": [
+     "sbp-hd",
+     "sbp-pills",
+     "i-store"
+    ],
+    "classes": [
+     ".sbp-hd",
+     ".sbp-pills",
+     ".i-store",
+     ".sbp-cover",
+     ".sbp-id",
+     ".sbp-stats"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Badge",
+     "values": [
+      "Official + Verified",
+      "Verified"
+     ],
+     "default": "Official + Verified",
+     "kind": "variant",
+     "suggest": {
+      "react": "badge",
+      "flutter": "badge"
+     }
+    },
+    {
+     "name": "Owner",
+     "values": [
+      "false",
+      "true"
+     ],
+     "default": "false",
+     "kind": "boolean",
+     "suggest": {
+      "react": "owner",
+      "flutter": "owner"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--bw-2",
+    "--c-ink",
+    "--c-line",
+    "--c-muted",
+    "--c-white",
+    "--fs-12",
+    "--fs-16",
+    "--lh-18",
+    "--lh-24",
+    "--r-12",
+    "--r-16",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-24",
+    "--s-4",
+    "--s-6",
+    "--s-8",
+    "--sh-soft",
+    "--tap"
+   ],
+   "screens": {
+    "total": 24,
+    "phone": 20,
+    "desk": 2,
+    "duo": 2,
+    "examples": [
+     "F1 หน้าแรก",
+     "F1 หน้าแรก · หมวดกีฬา",
+     "F1 หน้าแรก · ดูสตอรี่"
+    ]
+   },
+   "keywords": [
+    "shop header",
+    "storefront",
+    "store card",
+    "brand"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "ShopHeader",
+     "StoreCard"
+    ],
+    "flutter": [
+     "TmShopHeader",
+     "TmStoreCard"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "creator-header",
+   "n": "3.9",
+   "step": 3,
+   "name": {
+    "en": "Creator Header",
+    "th": "หัวโปรไฟล์ครีเอเตอร์"
+   },
+   "parts": [
+    "Creator Header"
+   ],
+   "why": "หน้าครีเอเตอร์และโปรไฟล์ ใช้หัวแบบเดียวกัน",
+   "proto": {
+    "blocks": [
+     "i-prof",
+     "i-stats"
+    ],
+    "classes": [
+     ".i-prof",
+     ".i-stats",
+     ".i-stat"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Following",
+     "values": [
+      "false",
+      "true"
+     ],
+     "default": "false",
+     "kind": "boolean",
+     "suggest": {
+      "react": "following",
+      "flutter": "following"
+     }
+    },
+    {
+     "name": "Self",
+     "values": [
+      "false",
+      "true"
+     ],
+     "default": "false",
+     "kind": "boolean",
+     "suggest": {
+      "react": "self",
+      "flutter": "self"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--bw-3",
+    "--c-ink",
+    "--c-muted",
+    "--c-red",
+    "--c-red-300",
+    "--c-white",
+    "--e-ring-gap",
+    "--fs-14",
+    "--fs-20",
+    "--ic-18",
+    "--lh-20",
+    "--lh-30",
+    "--r-24",
+    "--s-12",
+    "--s-16",
+    "--s-4",
+    "--s-64",
+    "--s-8",
+    "--tap",
+    "--z-1",
+    "--z-2"
+   ],
+   "screens": {
+    "total": 6,
+    "phone": 6,
+    "desk": 0,
+    "duo": 0,
+    "examples": [
+     "หน้าเสริม · โปรไฟล์",
+     "หน้าเสริม · โปรไฟล์ · ติดตามแล้ว",
+     "F5 หน้าครีเอเตอร์"
+    ]
+   },
+   "keywords": [
+    "creator",
+    "profile header",
+    "followers"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "CreatorHeader"
+    ],
+    "flutter": [
+     "TmCreatorHeader"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  },
+  {
+   "id": "shop-builder-parts",
+   "n": "3.10",
+   "step": 3,
+   "name": {
+    "en": "Shop Builder Parts",
+    "th": "ชิ้นส่วนแต่งร้าน"
+   },
+   "parts": [
+    "Shop Builder Parts"
+   ],
+   "why": "ให้เจ้าของร้านแต่งหน้าร้านเอง ทำหลังหน้าร้านเสร็จ",
+   "proto": {
+    "blocks": [
+     "sb-tools",
+     "sb-status",
+     "sb-rows",
+     "sb-row",
+     "sb-pub",
+     "sb-tplc"
+    ],
+    "classes": [
+     ".sb-tools",
+     ".sb-status",
+     ".sb-rows",
+     ".sb-row",
+     ".sb-pub",
+     ".sb-tplc",
+     ".sb-tool",
+     ".sb-row--fixed"
+    ],
+    "notes": []
+   },
+   "props": [
+    {
+     "name": "Row",
+     "values": [
+      "On",
+      "Off",
+      "Fixed"
+     ],
+     "default": "On",
+     "kind": "state",
+     "suggest": {
+      "react": "row",
+      "flutter": "row"
+     }
+    },
+    {
+     "name": "Template",
+     "values": [
+      "Off",
+      "On"
+     ],
+     "default": "On",
+     "kind": "state",
+     "suggest": {
+      "react": "template",
+      "flutter": "template"
+     }
+    },
+    {
+     "name": "Status",
+     "values": [
+      "Draft",
+      "Scheduled",
+      "Live"
+     ],
+     "default": "Draft",
+     "kind": "variant",
+     "suggest": {
+      "react": "status",
+      "flutter": "status"
+     }
+    }
+   ],
+   "rules": [],
+   "tokens": [
+    "--bw-2",
+    "--c-faint",
+    "--c-grey",
+    "--c-img",
+    "--c-ink",
+    "--c-line",
+    "--c-muted",
+    "--c-red",
+    "--c-red-200",
+    "--c-red-t",
+    "--c-star-off",
+    "--c-tint",
+    "--c-white",
+    "--fs-12",
+    "--fs-14",
+    "--fs-16",
+    "--ic-18",
+    "--ic-20",
+    "--lh-18",
+    "--lh-20",
+    "--lh-24",
+    "--r-10",
+    "--r-12",
+    "--r-16",
+    "--r-4",
+    "--r-6",
+    "--r-pill",
+    "--s-12",
+    "--s-16",
+    "--s-2",
+    "--s-4",
+    "--s-6",
+    "--s-8",
+    "--sh-card",
+    "--sh-float",
+    "--sh-tab",
+    "--z-5"
+   ],
+   "screens": {
+    "total": 15,
+    "phone": 15,
+    "desk": 0,
+    "duo": 0,
+    "examples": [
+     "SB แต่งหน้าร้าน (Shop Builder)",
+     "SB แต่งหน้าร้าน (Shop Builder) · เลือกแบบเน้นสินค้าเด่น",
+     "SB แต่งหน้าร้าน (Shop Builder) · ลำดับ"
+    ]
+   },
+   "keywords": [
+    "builder",
+    "template",
+    "editor",
+    "publish"
+   ],
+   "react": {
+    "status": "pending: the team's design system",
+    "importPath": "",
+    "component": "",
+    "props": {}
+   },
+   "flutter": {
+    "status": "pending: the team's design system",
+    "package": "",
+    "widget": "",
+    "props": {}
+   },
+   "suggest": {
+    "react": [
+     "ShopBuilderParts"
+    ],
+    "flutter": [
+     "TmShopBuilderParts"
+    ],
+    "note": "provisional names until the team's packages exist; mark their imports TODO(ds)"
+   }
+  }
+ ],
+ "tokens": {
+  "--c-white": "#FFFFFF",
+  "--c-ink": "#171717",
+  "--c-ink-2": "#3A3A3C",
+  "--c-muted": "#66666B",
+  "--c-tab": "#6B6B6B",
+  "--c-faint": "#A1A1A6",
+  "--c-idle": "#D4D4D4",
+  "--c-control": "#DBDBDB",
+  "--c-line": "#ECECEE",
+  "--c-disabled": "#EDEDED",
+  "--c-img": "#F1F1F2",
+  "--c-grey": "#F6F6F7",
+  "--c-red": "#E32321",
+  "--c-red-t": "#D11F1D",
+  "--c-red-50": "#FFF1F1",
+  "--c-red-100": "#FDF2F2",
+  "--c-red-200": "#F3B9B8",
+  "--c-red-300": "#F39E9D",
+  "--c-star": "#F5B400",
+  "--c-star-off": "#E5E5EA",
+  "--c-ok": "#1B7A3E",
+  "--c-ok-tint": "#E7F6EC",
+  "--c-warn": "#7A5300",
+  "--c-warn-tint": "#FFF7E6",
+  "--c-warn-fill": "#F5A524",
+  "--c-media": "#111111",
+  "--c-brand-line": "#06C755",
+  "--c-brand-fb": "#1877F2",
+  "--c-brand-ms": "#0A7CFF",
+  "--c-brand-ig": "#D62976",
+  "--c-brand-pp": "#113566",
+  "--c-brand-visa": "#1A1F71",
+  "--c-bank-kb": "#138F2D",
+  "--c-bank-scb": "#4E2A84",
+  "--c-bank-ktb": "#1BA5E1",
+  "--c-bank-bbl": "#1E3A8A",
+  "--c-bank-bay": "#6B5B2E",
+  "--c-bank-ttb": "#0050F0",
+  "--c-cert-tis": "#2400ED",
+  "--c-cert-fda": "#275098",
+  "--c-tint": "#FFF1F1",
+  "--c-glass": "rgba(23, 23, 23, .48)",
+  "--c-glass-light": "rgba(255, 255, 255, .72)",
+  "--c-glass-white": "rgba(255, 255, 255, .92)",
+  "--c-shade": "rgba(0, 0, 0, .38)",
+  "--c-scrim": "rgba(0, 0, 0, .42)",
+  "--c-toast": "rgba(23, 23, 23, .92)",
+  "--c-track": "rgba(255, 255, 255, .35)",
+  "--fx-mood": "linear-gradient(180deg, #F39E9D 0, #FDF2F2 83px, #FFFFFF 114px)",
+  "--fx-mood-grey": "linear-gradient(180deg, #F39E9D 0, #FDF2F2 83px, #FFFFFF 114px, #FFFFFF 220px, #F6F6F7 490px)",
+  "--g-shade-top": "linear-gradient(180deg, rgba(0, 0, 0, .38) 0, transparent 100%)",
+  "--fs-12": "12px",
+  "--fs-13": "13px",
+  "--fs-14": "14px",
+  "--fs-16": "16px",
+  "--fs-18": "18px",
+  "--fs-20": "20px",
+  "--fs-24": "24px",
+  "--fs-28": "28px",
+  "--lh-18": "18px",
+  "--lh-20": "20px",
+  "--lh-22": "22px",
+  "--lh-24": "24px",
+  "--lh-26": "26px",
+  "--lh-28": "28px",
+  "--lh-30": "30px",
+  "--lh-34": "34px",
+  "--lh-36": "36px",
+  "--lh-40": "40px",
+  "--s-2": "2px",
+  "--s-4": "4px",
+  "--s-6": "6px",
+  "--s-8": "8px",
+  "--s-10": "10px",
+  "--s-12": "12px",
+  "--s-16": "16px",
+  "--s-20": "20px",
+  "--s-24": "24px",
+  "--s-28": "28px",
+  "--s-32": "32px",
+  "--s-40": "40px",
+  "--s-48": "48px",
+  "--s-56": "56px",
+  "--s-64": "64px",
+  "--r-4": "4px",
+  "--r-6": "6px",
+  "--r-8": "8px",
+  "--r-10": "10px",
+  "--r-12": "12px",
+  "--r-16": "16px",
+  "--r-20": "20px",
+  "--r-24": "24px",
+  "--r-pill": "999px",
+  "--sh-card": "0 2px 10px rgba(0, 0, 0, .06)",
+  "--sh-soft": "0 4px 16px rgba(23, 23, 23, .06), 0 1px 2px rgba(23, 23, 23, .04)",
+  "--sh-float": "0 4px 16px rgba(0, 0, 0, .10)",
+  "--sh-search": "0 6px 18px rgba(0, 0, 0, .08)",
+  "--sh-tab": "0 -2px 12px rgba(0, 0, 0, .06)",
+  "--sh-sheet": "0 -8px 32px rgba(0, 0, 0, .14)",
+  "--sh-toast": "0 6px 18px rgba(0, 0, 0, .2)",
+  "--ring-white": "0 0 0 2px #FFFFFF",
+  "--ic-12": "12px",
+  "--ic-13": "13px",
+  "--ic-14": "14px",
+  "--ic-16": "16px",
+  "--ic-18": "18px",
+  "--ic-20": "20px",
+  "--ic-22": "22px",
+  "--ic-24": "24px",
+  "--ic-26": "26px",
+  "--ic-28": "28px",
+  "--ic-32": "32px",
+  "--bw-15": "1.5px",
+  "--bw-2": "2px",
+  "--bw-3": "3px",
+  "--bw-6": "6px",
+  "--w-screen": "390px",
+  "--w-content": "358px",
+  "--gutter": "16px",
+  "--tap": "44px",
+  "--h-status": "62px",
+  "--y-root-row": "60px",
+  "--h-row": "44px",
+  "--h-phd": "110px",
+  "--h-shd": "118px",
+  "--h-tabbar": "80px",
+  "--h-actionbar": "80px",
+  "--pb-root": "112px",
+  "--z-1": "1",
+  "--z-2": "2",
+  "--z-3": "3",
+  "--z-5": "5",
+  "--z-header": "30",
+  "--z-bar": "40",
+  "--z-tabbar": "50",
+  "--z-scrim": "90",
+  "--z-sheet": "91",
+  "--z-toast": "95",
+  "--z-ov-scrim": "100",
+  "--z-ov-sheet": "101",
+  "--z-story": "110",
+  "--m-press": "140ms",
+  "--m-fast": "200ms",
+  "--m-base": "250ms",
+  "--m-page-out": "220ms",
+  "--m-page-in": "320ms",
+  "--m-tab": "350ms",
+  "--m-pop": "420ms",
+  "--m-slow": "700ms",
+  "--m-spin": "800ms",
+  "--m-fly": "1600ms",
+  "--m-live": "1800ms",
+  "--m-story": "5s",
+  "--m-intro": "12s",
+  "--ease-std": "ease",
+  "--ease-out": "cubic-bezier(.2, .8, .2, 1)",
+  "--ease-pop": "cubic-bezier(.3, 1.6, .5, 1)",
+  "--ease-swipe": "cubic-bezier(.3, .7, .2, 1)",
+  "--ease-linear": "linear",
+  "--g-rv-fade": "linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .64) 50%, rgba(0, 0, 0, .64) 100%)",
+  "--cmt-indent": "44px",
+  "--shop-logo-ring": "4px",
+  "--sbm-frame": "6px",
+  "--sbm-9": "9px",
+  "--sbm-10": "10px",
+  "--sbm-11": "11px",
+  "--sbm-lh-12": "12px",
+  "--sbm-lh-16": "16px",
+  "--g-reel-shade": "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .12) 20%, rgba(0, 0, 0, .4) 45%, rgba(0, 0, 0, .62) 70%, rgba(0, 0, 0, .75) 100%)",
+  "--g-shop-clip": "linear-gradient(180deg, rgba(227, 35, 33, .6) 2%, rgba(102, 102, 102, 0) 44%, rgba(0, 0, 0, .6) 100%)",
+  "--g-clip-view": "linear-gradient(180deg, rgba(0, 0, 0, .45) 0, rgba(0, 0, 0, 0) 22%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, .7) 100%)",
+  "--g-ban-sale": "linear-gradient(120deg, #E32321 0%, #E32321 66%, #FF5B4F 100%)",
+  "--g-ban-new": "linear-gradient(120deg, #FFF1F1 0%, #FFD9D9 100%)",
+  "--g-ban-live": "linear-gradient(120deg, #171717 0%, #B71C1A 100%)",
+  "--g-flash": "linear-gradient(160deg, #FFF1F1, #FFE1E1)",
+  "--e-ring-gap": "3px",
+  "--e-check-top": "18px",
+  "--e-dot-top": "6px",
+  "--e-play-badge": "48px",
+  "--e-live-s-3": "3px",
+  "--e-live-s-5": "5px",
+  "--e-live-s-15": "15px",
+  "--e-live-lh-16": "16px",
+  "--e-live-lh-19": "19px",
+  "--e-live-lh-21": "21px",
+  "--e-live-lh-32": "32px",
+  "--e-live-stage": "#2A2622",
+  "--e-live-fade-34": "rgba(0, 0, 0, .34)",
+  "--e-live-fade-50": "rgba(0, 0, 0, .5)",
+  "--e-live-glass-40": "rgba(0, 0, 0, .4)",
+  "--e-live-replay": "rgba(0, 0, 0, .6)",
+  "--e-live-follow-on": "rgba(255, 255, 255, .9)",
+  "--e-live-mine": "#FFE3E2",
+  "--e-live-order": "rgba(227, 35, 33, .88)",
+  "--e-live-line": "#EDEDED",
+  "--m-push": "380ms",
+  "--m-sheet": "380ms",
+  "--m-fade": "160ms",
+  "--m-busy": "420ms",
+  "--m-confirm": "600ms",
+  "--m-check": "400ms",
+  "--m-skeleton": "320ms",
+  "--ease-page": "cubic-bezier(.32, .72, 0, 1)",
+  "--m-shimmer": "1100ms",
+  "--m-refresh": "900ms",
+  "--m-cart": "560ms",
+  "--m-hold": "220ms",
+  "--mv-under": "30%",
+  "--mv-rise": "12px",
+  "--c-wash": "rgba(0, 0, 0, .04)",
+  "--c-wash-2": "#F5F5F5",
+  "--sh-ic": "0 1px 1.55px rgba(0, 0, 0, .09)",
+  "--sh-pcard": "0 1px 4px 1px rgba(0, 0, 0, .1)",
+  "--c-red-wash": "rgba(227, 35, 33, .13)",
+  "--font-ui": "\"Sukhumvit Tadmai\", \"Noto Sans Thai Looped\", Thonburi, sans-serif"
+ },
+ "aliases": {
+  "--i-red": "--c-red",
+  "--i-red-press": "--c-red-t",
+  "--i-red-tint": "--c-tint",
+  "--i-red-tint-2": "--c-tint",
+  "--i-bg": "--c-grey",
+  "--i-bg-2": "--c-grey",
+  "--i-white": "--c-white",
+  "--i-ink": "--c-ink",
+  "--i-title": "--c-ink",
+  "--i-black": "--c-ink",
+  "--i-ink-2": "--c-ink-2",
+  "--i-mute": "--c-muted",
+  "--i-grey": "--c-muted",
+  "--i-time": "--c-muted",
+  "--i-tab": "--c-tab",
+  "--i-icon": "--c-muted",
+  "--i-line": "--c-line",
+  "--i-line-2": "--c-line",
+  "--i-line-3": "--c-control",
+  "--i-dark-glass": "--c-glass",
+  "--i-scrim": "--c-scrim",
+  "--i-r-xl": "--r-24",
+  "--i-r-lg": "--r-16",
+  "--i-r-md": "--r-12",
+  "--i-r-sm": "--r-8",
+  "--i-r-pill": "--r-pill",
+  "--i-sh-card": "--sh-card",
+  "--i-sh-float": "--sh-float",
+  "--i-sh-search": "--sh-search",
+  "--i-sh-tab": "--sh-tab",
+  "--i-sh-sheet": "--sh-sheet"
+ },
+ "houseRules": [
+  {
+   "id": "H1",
+   "group": "สี ตัวอักษร ระยะ · Colour, type, spacing",
+   "th": "ใช้แต่โทเคน ไม่มีค่าสีหรือ px ที่เขียนเอง",
+   "en": "Tokens only: no raw hex or px that a token covers",
+   "tier": "keep",
+   "check": "tokens",
+   "auto": true
+  },
+  {
+   "id": "H2",
+   "group": "สี ตัวอักษร ระยะ · Colour, type, spacing",
+   "th": "แดงแค่ปุ่มหลัก ราคา ป้ายความมั่นใจ แท็บที่เลือก ไลฟ์ และตัวเลขบนไอคอน",
+   "en": "Red only on the primary action, prices, trust icons, the active tab, Live and counts",
+   "tier": "keep",
+   "check": null,
+   "auto": false
+  },
+  {
+   "id": "H3",
+   "group": "สี ตัวอักษร ระยะ · Colour, type, spacing",
+   "th": "ด้านบนแดงอ่อนมีแค่ หน้าแรก Discover คำสั่งซื้อ โปรไฟล์ หน้าอื่นหัวขาว",
+   "en": "Soft red top only on Home, Discover, Order, Profile; a white header everywhere else; Live and Reels dark",
+   "tier": "keep",
+   "check": "mood",
+   "auto": true
+  },
+  {
+   "id": "H4",
+   "group": "สี ตัวอักษร ระยะ · Colour, type, spacing",
+   "th": "ขนาดตัวอักษรคู่กับระยะบรรทัดในตาราง สระไม่ถูกตัด",
+   "en": "Font sizes with their line heights from the type table; Thai marks never clip",
+   "tier": "keep",
+   "check": null,
+   "auto": false
+  },
+  {
+   "id": "H5",
+   "group": "สี ตัวอักษร ระยะ · Colour, type, spacing",
+   "th": "ขอบซ้ายขวา 16 ระยะเพิ่มทีละ 4",
+   "en": "16 side margins on every page; spacing on the 4 px scale",
+   "tier": "keep",
+   "check": null,
+   "auto": false
+  },
+  {
+   "id": "H6",
+   "group": "ป้ายและข้อมูล · Badges and data",
+   "th": "ป้ายทุกอันมาจากข้อมูลจริง ไม่มีป้ายที่คิดเอง",
+   "en": "Every badge comes from the data; no invented badges",
+   "tier": "keep",
+   "check": "invented",
+   "auto": true
+  },
+  {
+   "id": "H7",
+   "group": "ป้ายและข้อมูล · Badges and data",
+   "th": "ร้านทางการ | ของแท้ เฉพาะร้านทางการ ร้านอื่นมีแค่ ของแท้",
+   "en": "ร้านทางการ | ของแท้ only for official shops; ของแท้ alone for every other shop",
+   "tier": "keep",
+   "check": null,
+   "auto": false
+  },
+  {
+   "id": "H8",
+   "group": "ป้ายและข้อมูล · Badges and data",
+   "th": "ยืนยันตัวตน อยู่หัวหน้าร้านเท่านั้น มอก. อย. ตามข้อมูลสินค้า",
+   "en": "ยืนยันตัวตน only on the shop profile header; มอก. and อย. only from the product's cert",
+   "tier": "keep",
+   "check": null,
+   "auto": false
+  },
+  {
+   "id": "H9",
+   "group": "ป้ายและข้อมูล · Badges and data",
+   "th": "ส่วนลดเขียน −NN% ต่อจากราคาเดิมที่ขีดฆ่า",
+   "en": "Discount as −NN% (U+2212) right after the struck price",
+   "tier": "keep",
+   "check": "discount",
+   "auto": true
+  },
+  {
+   "id": "H10",
+   "group": "ป้ายและข้อมูล · Badges and data",
+   "th": "ร้าน ราคา สินค้า คน มาจากไฟล์ข้อมูล ไม่แต่งเอง",
+   "en": "Shops, prices, products and people from content/final-bible.json, never invented",
+   "tier": "keep",
+   "check": null,
+   "auto": false
+  },
+  {
+   "id": "H11",
+   "group": "ข้อความ · Copy",
+   "th": "ไทยง่าย สั้น บรรทัดละเรื่อง",
+   "en": "Short everyday Thai, one idea per line",
+   "tier": "keep",
+   "check": null,
+   "auto": false
+  },
+  {
+   "id": "H12",
+   "group": "ข้อความ · Copy",
+   "th": "ไม่เร่ง ไม่ตะโกน ไม่มีนับถอยหลังขายของ",
+   "en": "No urgency, no shouting, no sales countdowns",
+   "tier": "keep",
+   "check": "urgency",
+   "auto": true
+  },
+  {
+   "id": "H13",
+   "group": "ข้อความ · Copy",
+   "th": "ไม่มีขีดยาว ใช้เว้นวรรค · หรือขึ้นบรรทัดใหม่",
+   "en": "No em dash: a space, a middle dot or a new line",
+   "tier": "keep",
+   "check": "emdash",
+   "auto": true
+  },
+  {
+   "id": "H14",
+   "group": "ข้อความ · Copy",
+   "th": "ไม่พูดถึงการค้นด้วยเสียง ไม่มีปุ่มไมค์",
+   "en": "Nothing about voice search, no mic button",
+   "tier": "keep",
+   "check": "voice",
+   "auto": true
+  },
+  {
+   "id": "H15",
+   "group": "รูป · Pictures",
+   "th": "รูปเต็มขอบ ไม่บีบ ไม่ยืด ไม่มีกรอบขาว",
+   "en": "Pictures edge to edge with object-fit: cover; never stretched or boxed",
+   "tier": "keep",
+   "check": "pictures",
+   "auto": true
+  },
+  {
+   "id": "H16",
+   "group": "รูป · Pictures",
+   "th": "สินค้าจริง คนจริง ไม่มีมาสคอต",
+   "en": "Real products and real people; no mascot",
+   "tier": "keep",
+   "check": "mascot",
+   "auto": true
+  },
+  {
+   "id": "H17",
+   "group": "ไอคอน · Icons",
+   "th": "ไอคอนชุดเดียว เส้นหนาเท่ากัน ไม่ใช้อีโมจิ",
+   "en": "One icon family, the same stroke, no emoji as icons",
+   "tier": "keep",
+   "check": "icons",
+   "auto": true
+  },
+  {
+   "id": "H18",
+   "group": "ไอคอน · Icons",
+   "th": "ปุ่มแตะได้ 44 × 44 ปุ่มไอคอนมีชื่อไทย",
+   "en": "Tap targets at least 44 x 44; icon buttons carry a Thai aria-label",
+   "tier": "keep",
+   "check": "aria",
+   "auto": true
+  },
+  {
+   "id": "H19",
+   "group": "หน้าตาและ Device · Layout and devices",
+   "th": "มือถือกว้าง 390 ไม่เลื่อนด้านข้าง Desktop เรียบร้อยที่ 1440 และ 1280",
+   "en": "Phone 390 wide with no sideways scroll; Desktop clean at 1440 and 1280",
+   "tier": "keep",
+   "check": null,
+   "auto": false
+  },
+  {
+   "id": "H20",
+   "group": "หน้าตาและ Device · Layout and devices",
+   "th": "หน้าตาต่างจากต้นแบบได้ บอกว่าเปลี่ยนอะไร เพราะผล UX ไหน",
+   "en": "The layout may differ from the prototype: say what changed and the UX reason",
+   "tier": "flex",
+   "check": null,
+   "auto": false
+  }
+ ],
+ "dsRules": [
+  {
+   "tier": "keep",
+   "id": "S1",
+   "group": "Design system",
+   "th": "ใช้ชิ้นจาก design system ไม่ทำชิ้นซ้ำของเดิม",
+   "en": "Uses design system components: no hand-made copy of a part the design system has",
+   "check": "components",
+   "auto": true
+  },
+  {
+   "tier": "flex",
+   "id": "S2",
+   "group": "Design system",
+   "th": "ชิ้นที่ยังไม่มี อยู่ในรายการ component ใหม่",
+   "en": "Parts the design system does not have are listed as new-component requests",
+   "check": "requests",
+   "auto": true
+  },
+  {
+   "tier": "keep",
+   "id": "S3",
+   "group": "Design system",
+   "th": "ไม่มีชิ้นที่เอาออกแล้ว",
+   "en": "No removed parts (they were cut on purpose)",
+   "check": "banned",
+   "auto": true
+  },
+  {
+   "tier": "keep",
+   "id": "S4",
+   "group": "Design system",
+   "th": "ไม่มีไฟล์ฟอนต์ หรือลิงก์ฟอนต์",
+   "en": "No font files or font links: var(--font-ui) only (Sukhumvit Tadmai is licensed for the project)",
+   "check": "fonts",
+   "auto": true
+  }
+ ],
+ "hints": [
+  {
+   "id": "btn-buy",
+   "what": "hand-made buy or main action button",
+   "re": "<button[^>]*>[^<]*(ซื้อเลย|ใส่ตะกร้า|สั่งซื้อ|ชำระเงิน|ยืนยัน)|>(\\s*)(ซื้อเลย|ใส่ตะกร้า|สั่งซื้อ|ชำระเงิน)\\s*</(button|a)>|(ElevatedButton|FilledButton)\\(",
+   "unless": "i-btn|<Button\\b|TmButton",
+   "when": [],
+   "to": [
+    "button",
+    "",
+    {
+     "Variant": "Primary"
+    }
+   ],
+   "sure": true,
+   "why": "ปุ่มหลักมีแล้วใน design system"
+  },
+  {
+   "id": "btn-red",
+   "what": "hand-made red button",
+   "re": "<(button|a)\\b[^>]*(#e4002b|#e[0-9a-f]{5}|#d[0-9a-f]{5}|#f[0-4][0-9a-f]{4}|\\bred\\b|bg-red|var\\(--c-red\\))",
+   "unless": "i-btn|<Button\\b|TmButton|i-follow|i-chip",
+   "when": [],
+   "to": [
+    "button",
+    "",
+    {
+     "Variant": "Primary"
+    }
+   ],
+   "sure": true,
+   "why": "ปุ่มแดงทำเองแทน Button Primary"
+  },
+  {
+   "id": "btn-any",
+   "what": "hand-made button",
+   "re": "<button\\b(?![^>]*aria-label=)[^>]*>\\s*[^<\\s{]",
+   "unless": "i-btn|<Button\\b|TmButton|i-chip|i-follow|i-cat|i-opt|i-tab|i-utab|i-ftab|i-act|i-qty|i-switch|g-fchip|role=\"(tab|switch|radio)\"|ติดตาม|ซื้อเลย|ใส่ตะกร้า|สั่งซื้อ|ชำระเงิน|ยืนยัน",
+   "when": [
+    [
+     "border|outline",
+     {
+      "Variant": "Line"
+     }
+    ],
+    [
+     "grey|gray|#f[0-9a-f]{5}",
+     {
+      "Variant": "Grey"
+     }
+    ]
+   ],
+   "to": [
+    "button",
+    "",
+    {}
+   ],
+   "sure": false,
+   "why": "ปุ่มทำเอง เลือก Variant ให้ตรงหน้าที่"
+  },
+  {
+   "id": "icon-btn",
+   "what": "hand-made icon button",
+   "re": "icon-?btn|iconbutton|IconButton\\(|<button[^>]*aria-label=",
+   "unless": "i-hd__btn|i-phd__btn|i-float|i-icbtn|<IconButton\\b|TmIconButton|i-qty|i-switch",
+   "when": [],
+   "to": [
+    "icon-button",
+    "Icon Button",
+    {}
+   ],
+   "sure": false,
+   "why": "ปุ่มไอคอน ต้องแตะได้ 44 และมีชื่อไทย"
+  },
+  {
+   "id": "price",
+   "what": "hand-made price",
+   "re": "฿\\s?\\{?\\s?[\\d$a-z]",
+   "unless": "i-price|i-was|i-kv|<Price\\b|TmPrice|i-paybar|i-coupon|i-escrow",
+   "when": [
+    [
+     "line-through|<s>|<del>|<strike>|TextDecoration\\.lineThrough",
+     {
+      "Was price": "true"
+     }
+    ],
+    [
+     "font-?size:\\s*24|text-2xl|fontSize:\\s*24",
+     {
+      "Size": "24"
+     }
+    ],
+    [
+     "font-?size:\\s*16|text-base|fontSize:\\s*16",
+     {
+      "Size": "16"
+     }
+    ],
+    [
+     "font-?size:\\s*14|text-sm|fontSize:\\s*14",
+     {
+      "Size": "14"
+     }
+    ]
+   ],
+   "to": [
+    "price",
+    "Price",
+    {}
+   ],
+   "sure": true,
+   "why": "ราคามีชิ้นเดียว ใช้ทุกจอ"
+  },
+  {
+   "id": "discount",
+   "what": "hand-made discount",
+   "re": "(^|[^\\w-])[-−]\\s?\\d{1,2}\\s?%|ลด\\s?\\d{1,2}\\s?%|\\d{1,2}%\\s?off",
+   "unless": "i-tagdisc|<Price\\b|TmPrice",
+   "when": [],
+   "to": [
+    "price",
+    "Price",
+    {
+     "Discount": "true"
+    }
+   ],
+   "sure": true,
+   "why": "ส่วนลดเขียน −NN% ในชิ้นราคา"
+  },
+  {
+   "id": "rating",
+   "what": "hand-made rating",
+   "re": "★|⭐|\\bstar(s)?\\b|StarIcon|Icons\\.star|ขายแล้ว",
+   "unless": "i-meta|i-stars|i-rate|<Rating\\b|<Price\\b|TmRating|data-di=\"star\"",
+   "when": [],
+   "to": [
+    "price",
+    "Rating",
+    {}
+   ],
+   "sure": true,
+   "why": "คะแนนและยอดขายมีชิ้นแล้ว"
+  },
+  {
+   "id": "b-official",
+   "what": "hand-made ร้านทางการ / Official badge",
+   "re": "ร้านทางการ|\\bofficial\\b(?!\\s*store)",
+   "unless": "t-pill|t-tag|t-ptag|data-t-tag|data-t-pill|<TrustBadge\\b|TmTrustBadge|i-shoprow|sbp-|i-store",
+   "when": [
+    [
+     "ของแท้|authentic|genuine",
+     {
+      "Kind": "Official + Authentic",
+      "Type": "Pill 24"
+     }
+    ]
+   ],
+   "to": [
+    "trust-badge",
+    "",
+    {
+     "Kind": "Official"
+    }
+   ],
+   "sure": true,
+   "why": "ป้ายมีชุดเดียว Kind มาจากข้อมูลร้าน"
+  },
+  {
+   "id": "b-auth",
+   "what": "hand-made ของแท้ badge",
+   "re": "ของแท้|\\bauthentic\\b|\\bgenuine\\b",
+   "unless": "t-pill|t-tag|t-ptag|data-t-|<TrustBadge\\b|TmTrustBadge|ร้านทางการ|official",
+   "when": [
+    [
+     "การันตี",
+     {
+      "Type": "Product tag 40"
+     }
+    ]
+   ],
+   "to": [
+    "trust-badge",
+    "",
+    {
+     "Kind": "Authentic"
+    }
+   ],
+   "sure": true,
+   "why": "ของแท้ อยู่ในป้ายของการ์ดทุกใบ"
+  },
+  {
+   "id": "b-tis",
+   "what": "hand-made มอก. badge",
+   "re": "มอก\\.|\\bTIS\\b",
+   "unless": "t-tag|t-ptag|t-ic|data-t-|<TrustBadge\\b|TmTrustBadge",
+   "when": [],
+   "to": [
+    "trust-badge",
+    "",
+    {
+     "Kind": "มอก."
+    }
+   ],
+   "sure": true,
+   "why": "มอก. แสดงเมื่อข้อมูลสินค้าบอกเท่านั้น"
+  },
+  {
+   "id": "b-fda",
+   "what": "hand-made อย. badge",
+   "re": "อย\\.|\\bFDA\\b",
+   "unless": "t-tag|t-ptag|t-ic|data-t-|<TrustBadge\\b|TmTrustBadge",
+   "when": [],
+   "to": [
+    "trust-badge",
+    "",
+    {
+     "Kind": "อย."
+    }
+   ],
+   "sure": true,
+   "why": "อย. แสดงเมื่อข้อมูลสินค้าบอกเท่านั้น"
+  },
+  {
+   "id": "b-refund",
+   "what": "hand-made refund badge",
+   "re": "คืนเงิน\\s?2\\s?เท่า|refund",
+   "unless": "t-tag|t-ptag|t-ic|data-t-|<TrustBadge\\b|TmTrustBadge",
+   "when": [],
+   "to": [
+    "trust-badge",
+    "",
+    {
+     "Kind": "Refund 2x"
+    }
+   ],
+   "sure": true,
+   "why": "ป้ายคืนเงิน 2 เท่า มีแล้ว"
+  },
+  {
+   "id": "b-ship",
+   "what": "hand-made free shipping badge",
+   "re": "ส่งฟรี|จัดส่งฟรี|free\\s?ship",
+   "unless": "t-tag|t-ptag|t-ic|data-t-|<TrustBadge\\b|TmTrustBadge",
+   "when": [],
+   "to": [
+    "trust-badge",
+    "",
+    {
+     "Kind": "Free shipping"
+    }
+   ],
+   "sure": true,
+   "why": "จัดส่งฟรี มาจากข้อมูลสินค้า"
+  },
+  {
+   "id": "b-verified",
+   "what": "hand-made ยืนยันตัวตน badge",
+   "re": "ยืนยันตัวตน|\\bverified\\b",
+   "unless": "t-tag|data-t-|<TrustBadge\\b|TmTrustBadge",
+   "when": [],
+   "to": [
+    "trust-badge",
+    "",
+    {
+     "Kind": "Verified"
+    }
+   ],
+   "sure": true,
+   "why": "ยืนยันตัวตน อยู่หัวหน้าร้านเท่านั้น"
+  },
+  {
+   "id": "search",
+   "what": "hand-made search field",
+   "re": "type=\"search\"|placeholder=\"[^\"]*ค้นหา|placeholder=\\{?[\"'][^\"']*ค้นหา|SearchBar\\(|hintText:\\s*[\"'][^\"']*ค้นหา",
+   "unless": "i-search|<Search\\b|TmSearch",
+   "when": [],
+   "to": [
+    "form-controls",
+    "Search",
+    {}
+   ],
+   "sure": true,
+   "why": "ช่องค้นหามีแล้ว ไม่มีไฟวิ่ง ไม่มีปุ่มไมค์"
+  },
+  {
+   "id": "input",
+   "what": "hand-made text field",
+   "re": "<input\\b(?![^>]*type=\"(search|checkbox|radio|hidden)\")|<textarea\\b|TextField\\(|TextFormField\\(",
+   "unless": "i-input|i-search|<Input\\b|<Search\\b|TmInput|TmSearch|ค้นหา",
+   "when": [],
+   "to": [
+    "form-controls",
+    "Input",
+    {}
+   ],
+   "sure": true,
+   "why": "ช่องกรอกมีแล้ว ตัวอักษร 16 ขึ้นไป"
+  },
+  {
+   "id": "switch",
+   "what": "hand-made switch",
+   "re": "role=\"switch\"|class(Name)?=\"[^\"]*\\btoggle\\b|Switch\\(|CupertinoSwitch",
+   "unless": "i-switch|<Switch\\b|TmSwitch",
+   "when": [],
+   "to": [
+    "form-controls",
+    "Switch",
+    {}
+   ],
+   "sure": true,
+   "why": "สวิตช์มีแล้ว"
+  },
+  {
+   "id": "checkbox",
+   "what": "hand-made checkbox",
+   "re": "type=\"checkbox\"|role=\"checkbox\"|Checkbox\\(",
+   "unless": "i-check|<Checkbox\\b|TmCheckbox",
+   "when": [],
+   "to": [
+    "form-controls",
+    "Checkbox",
+    {}
+   ],
+   "sure": true,
+   "why": "ติ๊กมีแล้ว 3 สถานะ"
+  },
+  {
+   "id": "radio",
+   "what": "hand-made radio",
+   "re": "type=\"radio\"|role=\"radio\"(?![^>]*i-opt)|Radio\\(",
+   "unless": "i-radio|i-opt|<Radio\\b|TmRadio",
+   "when": [],
+   "to": [
+    "form-controls",
+    "Radio",
+    {}
+   ],
+   "sure": true,
+   "why": "ตัวเลือกเดียวมีแล้ว"
+  },
+  {
+   "id": "tabs",
+   "what": "hand-made tabs",
+   "re": "role=\"tablist\"|<Tabs\\b|TabBar\\(|TabController",
+   "unless": "i-utabs|i-ftabs|d-tabs|i-tabbar|<Tabs\\b.*from|TmTabs",
+   "when": [],
+   "to": [
+    "tabs",
+    "",
+    {}
+   ],
+   "sure": false,
+   "why": "แท็บเนื้อหามี 3 แบบ"
+  },
+  {
+   "id": "tabbar",
+   "what": "hand-made bottom navigation",
+   "re": "class(Name)?=\"[^\"]*(bottom-?nav|tab-?bar)|<(BottomNav|TabBar)\\b|BottomNavigationBar|NavigationBar\\(",
+   "unless": "i-tabbar|<TabBar\\b|TmTabBar",
+   "when": [],
+   "to": [
+    "tab-bar",
+    "",
+    {}
+   ],
+   "sure": true,
+   "why": "แท็บบาร์ 5 ช่องมีแล้ว"
+  },
+  {
+   "id": "sheet",
+   "what": "hand-made bottom sheet or modal",
+   "re": "\\b(bottom-?sheet|drawer|modal)\\b|showModalBottomSheet|<Dialog\\b",
+   "unless": "i-sheet|g-sheet|b-sheet|d-sheet|sb-sheet|<Sheet\\b|<BottomSheet\\b|TmSheet",
+   "when": [],
+   "to": [
+    "bottom-sheet",
+    "",
+    {}
+   ],
+   "sure": true,
+   "why": "ชีตมีชิ้นเดียว ขึ้นจากล่าง"
+  },
+  {
+   "id": "toast",
+   "what": "hand-made toast",
+   "re": "\\btoast\\b|snackbar|SnackBar\\(",
+   "unless": "i-toast|<Toast\\b|TmToast",
+   "when": [],
+   "to": [
+    "toast",
+    "",
+    {}
+   ],
+   "sure": true,
+   "why": "โทสต์มีแล้ว หายเอง"
+  },
+  {
+   "id": "follow",
+   "what": "hand-made follow button",
+   "re": ">\\s*\\+?\\s*ติดตาม\\s*<|[\"']\\+?\\s*ติดตาม[\"']",
+   "unless": "i-follow|<FollowButton\\b|TmFollowButton",
+   "when": [],
+   "to": [
+    "follow-button",
+    "",
+    {}
+   ],
+   "sure": true,
+   "why": "ปุ่มติดตามมีแล้ว 2 สถานะ"
+  },
+  {
+   "id": "qty",
+   "what": "hand-made quantity stepper",
+   "re": "\\bqty\\b|quantity|setCount\\(|>\\s*[−-]\\s*</button>",
+   "unless": "i-qty|<Stepper\\b|TmStepper",
+   "when": [],
+   "to": [
+    "option-sheet",
+    "Stepper",
+    {}
+   ],
+   "sure": true,
+   "why": "ปุ่ม − + มีแล้ว แตะได้ 44"
+  },
+  {
+   "id": "avatar",
+   "what": "hand-made avatar",
+   "re": "\\bavatar\\b|CircleAvatar|rounded-full[^\"]*\"[^>]*>\\s*<img|<img[^>]*rounded-full",
+   "unless": "i-av|i-story|i-me__av|<Avatar\\b|TmAvatar",
+   "when": [],
+   "to": [
+    "avatar",
+    "Avatar",
+    {}
+   ],
+   "sure": true,
+   "why": "รูปคนเป็นวงกลม 6 ขนาด"
+  },
+  {
+   "id": "pcard",
+   "what": "hand-made product card",
+   "re": "(product|item)[-_ ]?card|ProductTile|ProductItem",
+   "unless": "i-pc|i-rc|<ProductCard\\b|TmProductCard",
+   "when": [],
+   "to": [
+    "product-card",
+    "",
+    {}
+   ],
+   "sure": true,
+   "why": "การ์ดสินค้ามีแล้ว ทุกการ์ดหน้าตาเดียว"
+  },
+  {
+   "id": "see-all",
+   "what": "hand-made section header",
+   "re": "ดูทั้งหมด|see all",
+   "unless": "i-more|i-sh|<SectionHeader\\b|TmSectionHeader",
+   "when": [],
+   "to": [
+    "section-header",
+    "",
+    {}
+   ],
+   "sure": true,
+   "why": "หัวข้อส่วนมีแล้ว"
+  },
+  {
+   "id": "header",
+   "what": "hand-made top bar",
+   "re": "<header\\b|AppBar\\(|top-?bar|navbar|nav-?bar",
+   "unless": "i-hd|i-phd|i-shd|<TopBar\\b|TmTopBar|bottom",
+   "when": [],
+   "to": [
+    "top-bar",
+    "",
+    {}
+   ],
+   "sure": false,
+   "why": "หัวหน้ามี 4 แบบ เลือกแบบเดียว"
+  },
+  {
+   "id": "chip",
+   "what": "hand-made chip",
+   "re": "class(Name)?=\"[^\"]*\\b(chip|pill)s?\\b|Chip\\(|FilterChip|ChoiceChip",
+   "unless": "i-chip|i-cat|i-opt|t-pill|g-fchip|<Chip\\b|TmChip",
+   "when": [],
+   "to": [
+    "chip",
+    "",
+    {}
+   ],
+   "sure": false,
+   "why": "ชิปมีแล้ว 3 แบบ"
+  },
+  {
+   "id": "escrow",
+   "what": "hand-made escrow note",
+   "re": "ถือเงิน|escrow",
+   "unless": "i-escrow|d-escrow|d-foot|<EscrowNote\\b|TmEscrowNote",
+   "when": [],
+   "to": [
+    "escrow-note",
+    "",
+    {}
+   ],
+   "sure": true,
+   "why": "โน้ตถือเงินมีแล้ว"
+  },
+  {
+   "id": "order",
+   "what": "hand-made order status",
+   "re": "ต้องชำระ|เตรียมส่ง|กำลังส่ง",
+   "unless": "d-tab|d-ord|d-pill|d-hero|<OrderTile|TmOrder",
+   "when": [],
+   "to": [
+    "order-tiles",
+    "",
+    {}
+   ],
+   "sure": false,
+   "why": "สถานะคำสั่งซื้อมี 5 ช่องเท่านั้น"
+  },
+  {
+   "id": "summary",
+   "what": "hand-made order summary or pay bar",
+   "re": "ยอดรวม|รวมทั้งหมด|ค่าส่ง|ยอดชำระ",
+   "unless": "i-kv|i-paybar|i-actionbar|<Summary\\b|TmSummary",
+   "when": [],
+   "to": [
+    "summary-bars",
+    "",
+    {}
+   ],
+   "sure": false,
+   "why": "สรุปยอดและแถบจ่ายมีแล้ว"
+  },
+  {
+   "id": "coupon",
+   "what": "coupon (closest: the coupon row)",
+   "re": "คูปอง|coupon|voucher",
+   "unless": "i-coupon|<CouponRow\\b|TmCouponRow",
+   "when": [],
+   "to": [
+    "checkout-rows",
+    "Coupon Row",
+    {}
+   ],
+   "sure": false,
+   "why": "มีแค่แถวคูปองในหน้าชำระเงิน ถ้าไม่ใช่แถว ขอชิ้นใหม่"
+  },
+  {
+   "id": "comment",
+   "what": "hand-made comment or compose box",
+   "re": "เขียนความคิดเห็น|comment-?(box|input)|CommentBox",
+   "unless": "c-comp|c-cmt|fx-wr|<CommentBar\\b|TmComment",
+   "when": [],
+   "to": [
+    "compose-comment",
+    "",
+    {}
+   ],
+   "sure": false,
+   "why": "ช่องเขียนและความคิดเห็นมีแล้ว"
+  },
+  {
+   "id": "post",
+   "what": "hand-made post card",
+   "re": "post-?card|PostCard|FeedItem",
+   "unless": "i-post|<PostCard\\b.*from|TmPostCard",
+   "when": [],
+   "to": [
+    "post-card",
+    "",
+    {}
+   ],
+   "sure": false,
+   "why": "โพสต์มีชิ้นเดียว มีหรือไม่มีสินค้าก็ได้"
+  },
+  {
+   "id": "shoprow",
+   "what": "hand-made shop row",
+   "re": "ดูร้าน|ไปที่ร้าน|shop-?row|ShopRow",
+   "unless": "i-shoprow|sbp-hd|i-store|<ShopRow\\b|TmShopRow",
+   "when": [],
+   "to": [
+    "shop-row",
+    "",
+    {}
+   ],
+   "sure": false,
+   "why": "แถวร้านมีแล้ว"
+  }
+ ],
+ "banned": [
+  [
+   "i-off",
+   "ป้าย Official แดงทึบ เอาออกแล้ว ใช้ Trust Badge Kind=Official"
+  ],
+  [
+   "i-ship",
+   "สติกเกอร์รถส่งฟรีบนรูป เอาออกแล้ว ใช้วงไอคอนบนรูปการ์ด"
+  ],
+  [
+   "i-phd--red",
+   "หัวหน้าแดง เอาออกแล้ว หน้าลูกหัวขาว"
+  ]
+ ],
+ "invented": [
+  "ขายดี",
+  "ลดแรง",
+  "แนะนำ",
+  "มาแรง",
+  "ส่งด่วน",
+  "ของใหม่",
+  "ใหม่",
+  "ยอดนิยม",
+  "Best ?seller",
+  "Hot",
+  "Flash",
+  "Mall",
+  "Top",
+  "Premium",
+  "Sale",
+  "New",
+  "Trending",
+  "LazMall",
+  "Preferred"
+ ],
+ "badgeSet": "ร้านทางการ, ของแท้ (การันตีของแท้ on the product page), ยืนยันตัวตน, มอก., อย., คืนเงิน 2 เท่า (ปลอมคืนเงิน 2 เท่า on the product page), จัดส่งฟรี",
+ "kitBlocks": {
+  "screen": 186,
+  "i": 186,
+  "status-bar": 179,
+  "nw": 176,
+  "hit": 166,
+  "i-blk": 161,
+  "i-page": 158,
+  "i-price": 123,
+  "i-btn": 114,
+  "i-prow": 100,
+  "i-was": 100,
+  "t-pill": 98,
+  "i-m12": 94,
+  "i-count": 90,
+  "i-ic-red": 85,
+  "i-h14": 80,
+  "i-phd": 79,
+  "visually-hidden": 69,
+  "i-follow": 69,
+  "i-tabbar": 65,
+  "i-tab": 65,
+  "i-ic-white": 57,
+  "i-tagdisc": 55,
+  "i-meta": 55,
+  "i-h18r": 54,
+  "i-more": 50,
+  "i-sh": 49,
+  "i-pc": 41,
+  "t-ics": 41,
+  "t-ic": 41,
+  "i-ic-ink": 41,
+  "i-actionbar": 38,
+  "i-float": 36,
+  "i-ptag": 36,
+  "i-sold": 36,
+  "i-mt8": 35,
+  "i-h16": 35,
+  "i-ic-grey": 34,
+  "i-utabs": 34,
+  "i-utab": 34,
+  "i-chip": 34,
+  "t-badges": 33,
+  "i-hd": 31,
+  "i-row-x": 31,
+  "t-tag": 29,
+  "i-b14": 29,
+  "i-rc": 28,
+  "g-sub": 26,
+  "i-grid2": 25,
+  "t-mason": 25,
+  "i-escrow": 25,
+  "i-sec": 24,
+  "i-kv": 24,
+  "i-btns": 23,
+  "i-item": 23,
+  "i-switch": 22,
+  "sb-bg-sale": 22,
+  "i-chips": 21,
+  "d-badge": 21,
+  "i-qty": 20,
+  "i-live": 20,
+  "i-onair": 20,
+  "i-views": 20,
+  "i-lclose": 20,
+  "i-scrim": 19,
+  "i-sheet": 19,
+  "g-scrim": 18,
+  "g-sheet": 18,
+  "i-mt12": 18,
+  "a-grey": 18,
+  "i-coupon": 18,
+  "f-live": 18,
+  "i-lhost": 18,
+  "f-lviews": 18,
+  "i-lchat": 18,
+  "i-lmsg": 18,
+  "i-lcardwrap": 18,
+  "i-lbar": 18,
+  "i-lbtn": 18,
+  "i-lin": 18,
+  "i-ptagwrap": 18,
+  "i-paybar": 17,
+  "i-post": 17,
+  "i-acts": 17,
+  "i-act": 17,
+  "i-livetag": 16,
+  "i-toast": 16,
+  "i-mt16": 16,
+  "t-ptag": 16,
+  "i-input": 16,
+  "i-shd": 15,
+  "i-search": 15,
+  "i-shoprow": 15,
+  "i-aff": 15,
+  "sb": 15,
+  "sb-hd": 15,
+  "sb-space": 15,
+  "a-grid": 14,
+  "a-end": 14,
+  "i-red": 14,
+  "d-sec": 14,
+  "d-bar": 14,
+  "fx-pcwrap": 14,
+  "fx-pc": 14,
+  "i-ell": 13,
+  "a-sh": 13,
+  "i-mt4": 13,
+  "d-escrow": 13,
+  "i-dots": 13,
+  "i-av": 13,
+  "sb-status": 13,
+  "sb-dot": 13,
+  "sb-prev": 13,
+  "sbp-gold": 13,
+  "sb-pm": 13,
+  "sb-pb": 13,
+  "sb-ppills": 13,
+  "sb-plbl": 13,
+  "sb-prow": 13,
+  "sb-pgrid": 13,
+  "sb-sec": 13,
+  "sb-tools": 13,
+  "sb-tool": 13,
+  "sb-pub": 13,
+  "i-stories": 12,
+  "i-story": 12,
+  "i-banner": 12,
+  "i-store": 12,
+  "i-cats": 12,
+  "i-cat": 12,
+  "i-shopgrp": 12,
+  "i-pp": 12,
+  "d-foot": 12,
+  "sbp-logo": 12,
+  "sbp-pills": 12,
+  "sbp-pill": 12,
+  "c-imgnote": 12,
+  "i-promise": 11,
+  "i-radio": 11,
+  "i-h20": 11,
+  "d-tabs": 11,
+  "d-tab": 11,
+  "d-listhd": 11,
+  "d-ord": 11,
+  "d-pill": 11,
+  "g-page": 11,
+  "sbp-fl-r": 11,
+  "sbp-fl": 11,
+  "fx-home": 10,
+  "i-psec": 10,
+  "fx-home-brands": 10,
+  "fx-home-cat": 10,
+  "fx-home-grid": 10,
+  "a-sortbar": 10,
+  "a-sort": 10,
+  "a-filters": 10,
+  "a-filtic": 10,
+  "g-fchip": 10,
+  "a-count": 10,
+  "f-rv": 10,
+  "a-grp": 10,
+  "a-right": 10,
+  "i-radios": 10,
+  "i-rule": 10,
+  "a-sumrule": 10,
+  "g-sec": 10,
+  "i-stars": 10,
+  "d-list": 10,
+  "d-note": 10,
+  "i-ftabs": 10,
+  "i-ftab": 10,
+  "i-vids": 10,
+  "i-vid": 10,
+  "c-thread": 10,
+  "c-cmt": 10,
+  "sbp-hd": 10,
+  "sbp-cover": 10,
+  "i-topshade": 10,
+  "sbp-fl-l": 10,
+  "sbp-id": 10,
+  "sbp-nm": 10,
+  "sbp-act": 10,
+  "sbp-stats": 10,
+  "sbp-stat": 10,
+  "sbp-tabs": 10,
+  "sbp-panel": 10,
+  "sbp-mh": 10,
+  "sbp-grid": 10,
+  "i-subcat": 9,
+  "lazy-more": 9,
+  "a-shop": 9,
+  "i-opts": 9,
+  "a-imgnote": 9,
+  "a-coimg": 9,
+  "a-center": 9,
+  "d1": 9,
+  "d-cnt": 9,
+  "d-off": 9,
+  "c4": 9,
+  "sb-on": 9,
+  "sb-rows": 9,
+  "sb-grip": 9,
+  "fd-card": 9,
+  "f-prod": 8,
+  "f-gal": 8,
+  "f-info": 8,
+  "f-rvs": 8,
+  "f-shop": 8,
+  "f-more": 8,
+  "i-opt": 8,
+  "i-check": 8,
+  "g-row": 8,
+  "f-disc": 8,
+  "fx-wr": 8,
+  "f-vids": 8,
+  "f-feedend": 8,
+  "c-cmts": 8,
+  "c-badge": 8,
+  "sbp-sec": 8,
+  "sbp-vid": 8,
+  "sbp-all": 8,
+  "sbp-load": 8,
+  "g-shopbox": 7,
+  "d-track": 7,
+  "d-hero": 7,
+  "d-steps": 7,
+  "d-item": 7,
+  "d-explain": 7,
+  "c-comp": 7,
+  "d-ta": 7,
+  "d-count": 7,
+  "d-mt16": 7,
+  "d-photos": 7,
+  "d-addph": 7,
+  "i-band": 7,
+  "c-page": 7,
+  "c-gap": 7,
+  "c-morecmt": 7,
+  "c-cgroup": 7,
+  "c-aff": 7,
+  "c6": 7,
+  "c-hdtxt": 7,
+  "c-cp": 7,
+  "c-aud": 7,
+  "c-types": 7,
+  "c-ta": 7,
+  "c-tagsugg": 7,
+  "c-tag": 7,
+  "c-photos": 7,
+  "c-addph": 7,
+  "c-att": 7,
+  "c-bought": 7,
+  "c-postbar": 7,
+  "sbp-ban": 7,
+  "sbp-pop": 7,
+  "sbp-row": 7,
+  "sbp-rc": 7,
+  "sb-row": 7,
+  "sb-add": 7,
+  "sb-alt": 7,
+  "fd-skip": 7,
+  "fd-top": 7,
+  "fd-wrap": 7,
+  "fd-logo": 7,
+  "fd-sx-btn": 7,
+  "fd-user": 7,
+  "fd-nav": 7,
+  "fd-main": 7,
+  "fd-foot": 7,
+  "duo": 7,
+  "fu": 7,
+  "duo-body": 7,
+  "duo-split": 7,
+  "duo-pane": 7,
+  "fu-tpage": 7,
+  "duo-rail": 7,
+  "duo-sys": 7,
+  "duo-rbtn": 7,
+  "g-h": 6,
+  "a-copage": 6,
+  "a-addr": 6,
+  "a-coprice": 6,
+  "a-shiprow": 6,
+  "a-sum": 6,
+  "g-prod": 6,
+  "g-gal": 6,
+  "g-info": 6,
+  "g-pbox": 6,
+  "g-escrow-at": 6,
+  "g-rvs": 6,
+  "g-rvsum": 6,
+  "g-more": 6,
+  "g-order": 6,
+  "i-mute": 6,
+  "g-chatv": 6,
+  "g-chathd": 6,
+  "g-chat": 6,
+  "g-day": 6,
+  "g-thread": 6,
+  "g-msg": 6,
+  "g-mcard": 6,
+  "g-comp": 6,
+  "g-quick": 6,
+  "i-icbtn": 6,
+  "d-parcel": 6,
+  "d-tl": 6,
+  "g-account": 6,
+  "d-mini": 6,
+  "b-sheet": 6,
+  "i-prof": 6,
+  "i-stats": 6,
+  "i-stat": 6,
+  "sbp-video": 6,
+  "sbp-vrow": 6,
+  "i-me": 6,
+  "i-h20r": 6,
+  "i-m14r": 6,
+  "d6-myshop": 6,
+  "i-mason": 6,
+  "i-gcard": 6,
+  "fd-auth": 6,
+  "fu-page": 6,
+  "a-block": 5,
+  "a-trends": 5,
+  "a-trend": 5,
+  "a-catgrid": 5,
+  "a-subcat": 5,
+  "g-search": 5,
+  "a-optsheet": 5,
+  "a-pick": 5,
+  "a-sets": 5,
+  "a-optprice": 5,
+  "a-qtyrow": 5,
+  "i-qr": 5,
+  "a-steps": 5,
+  "d-kvs": 5,
+  "d2": 5,
+  "i-h18": 5,
+  "c-affnote": 5,
+  "c-ptagwrap": 5,
+  "sbp-dots": 5,
+  "d6-tag": 5,
+  "i-photo-note": 5,
+  "fd-sh": 5,
+  "fd-h": 5,
+  "fd-lrow": 5,
+  "duo-count": 5,
+  "fu-tab": 5,
+  "a-recents": 4,
+  "a-recent": 4,
+  "i-subcats": 4,
+  "a-subcats": 4,
+  "a-subimg": 4,
+  "a-offshop": 4,
+  "a-k3": 4,
+  "i-px": 4,
+  "a-pair": 4,
+  "a-cartpage": 4,
+  "a-note": 4,
+  "g-optsheet": 4,
+  "g-optop": 4,
+  "g-qtyrow": 4,
+  "g-act": 4,
+  "i-result": 4,
+  "d-shop": 4,
+  "d-addr": 4,
+  "d5": 4,
+  "d-radios": 4,
+  "d-radio": 4,
+  "d-need": 4,
+  "g-shprev": 4,
+  "g-apps": 4,
+  "g-app": 4,
+  "g-friends": 4,
+  "g-friend": 4,
+  "b-k4": 4,
+  "a-bnum": 4,
+  "b-buy": 4,
+  "b-row": 4,
+  "b-pay": 4,
+  "b-sum": 4,
+  "g-post": 4,
+  "i-grid3": 4,
+  "c2": 4,
+  "c-reel": 4,
+  "c-rail": 4,
+  "f-creator": 4,
+  "f-ptop": 4,
+  "f-prof": 4,
+  "f-ptabs": 4,
+  "fx-profile": 4,
+  "c-chips": 4,
+  "g-chiprow": 4,
+  "g-tail": 4,
+  "sb-radio": 4,
+  "sb-bottom": 4,
+  "sb-field": 4,
+  "sb-coupons": 4,
+  "fd-qpill": 4,
+  "fd-lrows": 4,
+  "fu-hd": 4,
+  "fu-sh": 4,
+  "fu-h": 4,
+  "g-roll": 3,
+  "a-pp": 3,
+  "a-done": 3,
+  "a-order": 3,
+  "a-pill": 3,
+  "a-pts": 3,
+  "c-rv": 3,
+  "d-under": 3,
+  "d-sheet": 3,
+  "d-done": 3,
+  "d4": 3,
+  "d-shopline": 3,
+  "d-rate": 3,
+  "i-rate": 3,
+  "d-tags": 3,
+  "d-mt8": 3,
+  "d-swrow": 3,
+  "d-points": 3,
+  "d-photo": 3,
+  "c1": 3,
+  "g-notif": 3,
+  "sb-scrim": 3,
+  "sb-sheet": 3,
+  "fd-pad": 3,
+  "fd-dot": 3,
+  "fd-sec": 3,
+  "fd-grid6": 3,
+  "fd-menu": 3,
+  "fd-mrow": 3,
+  "i-lrow": 3,
+  "fd-stars": 3,
+  "fd-rev": 3,
+  "fd-stats": 3,
+  "fu-grid": 3,
+  "g-cam": 2,
+  "g-story": 2,
+  "a-hint": 2,
+  "g-note": 2,
+  "g-grey": 2,
+  "g-badge": 2,
+  "d-gate": 2,
+  "d-facts": 2,
+  "d-link": 2,
+  "g-acts": 2,
+  "b-ended": 2,
+  "b-white": 2,
+  "b-next": 2,
+  "i-lc": 2,
+  "g-profile": 2,
+  "g-cover": 2,
+  "g-ptop": 2,
+  "c-tail": 2,
+  "c-cmtsheet": 2,
+  "c-sheetcomp": 2,
+  "c-photo": 2,
+  "sb-h1": 2,
+  "sb-tplc": 2,
+  "r": 2,
+  "g": 2,
+  "p": 2,
+  "sb-count": 2,
+  "sb-prod": 2,
+  "sb-unpin": 2,
+  "sb-search": 2,
+  "sb-full": 2,
+  "sb-pinbtn": 2,
+  "sb-slides": 2,
+  "sb-slide": 2,
+  "sb-lbl": 2,
+  "sb-tpls": 2,
+  "sb-tpl": 2,
+  "sb-bg-new": 2,
+  "sb-bg-live": 2,
+  "sb-imgs": 2,
+  "sb-up": 2,
+  "sb-links": 2,
+  "sb-when": 2,
+  "sb-ranges": 2,
+  "sb-seg": 2,
+  "sb-covers": 2,
+  "sb-chg": 2,
+  "sb-opt": 2,
+  "fd-mecard": 2,
+  "fd-compose": 2,
+  "fd-ptag": 2,
+  "fd-panel": 2,
+  "fd-lbasket": 2,
+  "fd-lbs": 2,
+  "fd-stage": 2,
+  "fd-host": 2,
+  "fd-acct": 2,
+  "fd-tier": 2,
+  "fd-opt": 2,
+  "fd-sets": 2,
+  "fd-optprice": 2,
+  "fd-qty": 2,
+  "fd-rv": 2,
+  "fd-revsum": 2,
+  "fd-ver": 2,
+  "fu-top": 2,
+  "fu-sec": 2,
+  "fu-rowx": 2,
+  "fu-escrowcard": 2,
+  "sb-done": 2,
+  "sbp-bar": 2,
+  "sbp-h": 2,
+  "sbp-cps": 2,
+  "sbp-cp": 2,
+  "g-imgq": 1,
+  "g-optgrp": 1,
+  "d-myrv": 1,
+  "g-live": 1,
+  "g-lbadge": 1,
+  "g-lhost-badge": 1,
+  "g-scrub": 1,
+  "b-toast": 1,
+  "f-follow": 1,
+  "g-clip": 1,
+  "f-pshop": 1,
+  "f-plive": 1,
+  "c-picks": 1,
+  "c-pick": 1,
+  "c-affon": 1,
+  "sbp-top": 1,
+  "sbp-iv": 1,
+  "c5": 1,
+  "c-sec": 1,
+  "c-who": 1,
+  "c-verify": 1,
+  "c-checks": 1,
+  "c-tiles": 1,
+  "c-tile": 1,
+  "c-kvs": 1,
+  "c-kv-star": 1,
+  "c-pol": 1,
+  "g-storyp": 1,
+  "g-hero": 1,
+  "g-fl-l": 1,
+  "g-fl-r": 1,
+  "g-fl": 1,
+  "g-story-t": 1,
+  "c-red": 1,
+  "i-h24": 1,
+  "i-b16": 1,
+  "g-shop": 1,
+  "sbp-story": 1,
+  "sb-story": 1,
+  "sbp-storyc": 1,
+  "sbp-clips": 1,
+  "g-avedit": 1,
+  "g-center": 1,
+  "g-form": 1,
+  "g-lab": 1,
+  "g-postnote": 1,
+  "g-plink": 1,
+  "g-coupon": 1,
+  "c-coupon": 1,
+  "sbp-own": 1,
+  "sb-types": 1,
+  "sb-type": 1,
+  "sb-pflash": 1,
+  "sb-plive": 1,
+  "sb-pdots": 1,
+  "sb-del": 1,
+  "fd-3col": 1,
+  "fd-col-l": 1,
+  "fd-people": 1,
+  "fd-person": 1,
+  "fd-col-c": 1,
+  "fd-feedtabs": 1,
+  "fd-feed": 1,
+  "fd-post": 1,
+  "fd-vids": 1,
+  "fd-col-r": 1,
+  "fd-tags": 1,
+  "fd-hero": 1,
+  "fd-stories": 1,
+  "t-row": 1,
+  "fd-homebadges": 1,
+  "fd-banner": 1,
+  "fd-livenow": 1,
+  "fd-band": 1,
+  "fd-stores": 1,
+  "fd-cats": 1,
+  "fd-catgrid": 1,
+  "fd-liveband": 1,
+  "fd-livegrid": 1,
+  "fd-live-l": 1,
+  "fd-live-c": 1,
+  "fd-live-r": 1,
+  "fd-escrowcard": 1,
+  "fd-dtabs": 1,
+  "fd-otab": 1,
+  "fd-ordhd": 1,
+  "fd-ords": 1,
+  "fd-ord": 1,
+  "fd-crumb": 1,
+  "fd-prod": 1,
+  "fd-gal": 1,
+  "fd-desc": 1,
+  "fd-buy": 1,
+  "fd-share": 1,
+  "fd-fav": 1,
+  "fd-row": 1,
+  "fd-prod2": 1,
+  "fd-rvcard": 1,
+  "fd-rvs": 1,
+  "fd-shopstrip": 1,
+  "fd-logo64": 1,
+  "fd-me": 1,
+  "fd-mehd": 1,
+  "fd-mestats": 1,
+  "fd-myshop": 1,
+  "fd-mepanel": 1,
+  "fd-mason": 1,
+  "fd-shophd": 1,
+  "fd-shoptabs": 1,
+  "fd-ban": 1,
+  "fd-pills": 1,
+  "fd-mh": 1,
+  "fd-vidrow": 1,
+  "fd-vid": 1,
+  "fd-more": 1,
+  "fu-disc": 1,
+  "fu-ftabs": 1,
+  "fu-compose": 1,
+  "fu-feed": 1,
+  "fu-post": 1,
+  "fu-vids": 1,
+  "duo-hide-port": 1,
+  "fu-pdpage": 1,
+  "fu-pd": 1,
+  "fu-cmts": 1,
+  "fu-cin": 1,
+  "fu-home": 1,
+  "fu-stories": 1,
+  "fu-promise": 1,
+  "fu-banner": 1,
+  "fu-cat": 1,
+  "fu-cats": 1,
+  "fu-livenow": 1,
+  "fu-lbig": 1,
+  "fu-lrows": 1,
+  "fu-brands": 1,
+  "duo-port-split": 1,
+  "fu-live": 1,
+  "fu-stage": 1,
+  "fu-ltrail": 1,
+  "fu-lslot": 1,
+  "fu-ord": 1,
+  "fu-dtabs": 1,
+  "fu-otab": 1,
+  "fu-ordhd": 1,
+  "fu-ords": 1,
+  "fu-ordc": 1,
+  "fu-odpage": 1,
+  "fu-dacts": 1,
+  "fu-prod": 1,
+  "fu-blk": 1,
+  "fu-info": 1,
+  "fu-buy": 1,
+  "fu-fav": 1,
+  "fu-opts": 1,
+  "fu-shoprow": 1,
+  "fu-logo48": 1,
+  "fu-more": 1,
+  "fu-cta": 1,
+  "fu-prodtrail": 1,
+  "fu-gal": 1,
+  "fu-desc": 1,
+  "fu-rvsec": 1,
+  "fu-rvs": 1,
+  "fu-rev": 1,
+  "fu-prof": 1,
+  "fu-me": 1,
+  "fu-metabs": 1,
+  "fu-mepanel": 1,
+  "fu-mason": 1,
+  "fu-acard": 1,
+  "fu-otiles": 1,
+  "fu-otile": 1,
+  "fu-tier": 1,
+  "fu-shop": 1,
+  "fu-shoptabs": 1,
+  "fu-shoppanel": 1,
+  "fu-ban": 1,
+  "fu-pills": 1,
+  "fu-mh": 1,
+  "fu-moreb": 1,
+  "fu-shophd": 1,
+  "fu-intro": 1,
+  "fu-vidrow": 1,
+  "fu-vid": 1,
+  "fu-after": 1,
+  "fu-shopextra": 1,
+  "fu-shoprv": 1
+ }
+}

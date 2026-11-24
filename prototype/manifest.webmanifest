@@ -1,0 +1,9 @@
+{
+  "name": "Thaimart Prototype",
+  "short_name": "Thaimart",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#F29B9A",
+  "icons": [{ "src": "../assets/icons/app_icon_180.png", "sizes": "180x180", "type": "image/png" }, { "src": "../assets/icons/logo_mark.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
