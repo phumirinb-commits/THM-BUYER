@@ -117,7 +117,6 @@ function CartSheet({ app, id, mode = 'cart', onClose }) {
   const orig = p.discount ? p.originalPrice + add : null;
   const missing = groups.filter((_, gi) => picks[gi] == null).map((g) => g.label);
   const max = stock ?? 99;
-  const [tooMany, setTooMany] = useState(false);
   // Photo on top: the picked option's photo, else the product photo.
   const pickedImg = picks.map((k, gi) => (k == null ? null : groups[gi].items[k].img)).find(Boolean);
 
@@ -207,15 +206,16 @@ function CartSheet({ app, id, mode = 'cart', onClose }) {
 
           <section className="ct-group ct-qty-row">
             <h3>จำนวน</h3>
-            <div className="ct-stepper">
-              <button aria-label="ลดจำนวน" disabled={qty <= 1} onClick={() => setQty(qty - 1)}><Icon name="minus" size={18} /></button>
+            <div className={`ct-stepper ${chosen ? '' : 'off'}`} aria-disabled={!chosen}>
+              <button aria-label="ลดจำนวน" disabled={!chosen || qty <= 1} onClick={() => setQty(qty - 1)}><Icon name="minus" size={18} /></button>
               <output aria-live="polite" aria-label={`จำนวน ${qty} ชิ้น`}>{qty}</output>
-              <button aria-label="เพิ่มจำนวน" disabled={qty >= max || stock === 0} onClick={() => (qty >= QTY_MAX ? setTooMany(true) : setQty(qty + 1))}><Icon name="plus" size={18} /></button>
+              <button aria-label="เพิ่มจำนวน" disabled={!chosen || qty >= max || qty >= QTY_MAX || stock === 0} onClick={() => setQty(qty + 1)}><Icon name="plus" size={18} /></button>
             </div>
           </section>
-          {stock != null && stock > 0 && qty >= stock && <p className="ct-max">ซื้อได้สูงสุด {stock} ชิ้น</p>}
+          {qty >= QTY_MAX && (stock == null || stock > QTY_MAX)
+            ? <p className="ct-max ct-max-err" role="alert">สั่งซื้อได้ไม่เกิน {QTY_MAX} ชิ้นต่อครั้ง</p>
+            : stock != null && stock > 0 && qty >= stock && <p className="ct-max">ซื้อได้สูงสุด {stock} ชิ้น</p>}
           {chart && <SizeChart app={app} kind={chart} onClose={() => setChart(null)} />}
-          {tooMany && <TooManyModal app={app} onClose={() => setTooMany(false)} />}
         </>
       )}
     </Sheet>

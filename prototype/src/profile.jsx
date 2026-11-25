@@ -289,7 +289,7 @@ function ProfileBody({ app, web }) {
         <div className="sh-who3 pf-who3">
           <div className="pf-av-wrap">
             <img className="pf-mascot" src={A(PI('mascot.png'))} alt="" />
-            <div className="pf-av"><div className="pf-av-in">{meSrc() ? <img src={meSrc()} alt={`รูปโปรไฟล์ ${ME.name}`} /> : <span className="pf-av-none"><Icon name="user" size={36} /></span>}</div></div>
+            <div className={`pf-av ${app.cases.myStory ? 'has-story' : ''}`}><div className="pf-av-in">{meSrc() ? <img src={meSrc()} alt={`รูปโปรไฟล์ ${ME.name}`} /> : <span className="pf-av-none"><Icon name="user" size={36} /></span>}</div></div>
           </div>
           <div className="sh-who3-txt">
             <h1 className="pf-name">{ME.name}</h1>
@@ -325,7 +325,7 @@ function ProfileSkeleton() {
   // Same layout as the profile: cover, photo left with name and handle beside it, bio, one row of counts.
   return (
     <div className="skeleton" aria-busy="true" aria-label="กำลังโหลด">
-      <Sk w="100%" h={149} r={0} style={{ display: 'block', borderRadius: '0 0 24px 24px', background: 'linear-gradient(90deg, #C9C9CF 0, #D6D6DB 40%, #C9C9CF 80%) 0 0 / 200% 100%' }} /> {/* darker, so the white clock on this page still shows */}
+      <Sk w="100%" h={149} r={0} style={{ display: 'block', borderRadius: 0, background: 'linear-gradient(90deg, #C9C9CF 0, #D6D6DB 40%, #C9C9CF 80%) 0 0 / 200% 100%' }} /> {/* darker, so the white clock on this page still shows */}
       <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12, padding: '0 16px', marginTop: -30 }}>
         <Sk w={84} h={84} r={42} style={{ flex: 'none', border: '3px solid #fff' }} />
         <div className="sk-col" style={{ alignItems: 'flex-start', gap: 8, paddingTop: 38 }}><Sk w={140} h={22} /><Sk w={96} h={14} /></div>
@@ -474,7 +474,7 @@ function UserProfilePage({ app, name }) {
             <button className={`pf-btn ${following ? 'sh-follow-ic' : 'primary'}`} aria-pressed={following} aria-label={following ? 'กำลังติดตาม แตะเพื่อเลิกติดตาม' : 'ติดตาม'} onClick={follow}>
               {following
                 ? <i className="o-ic" style={{ width: 18, height: 18, WebkitMaskImage: `url("${A('assets/icons/user_check.svg')}")`, maskImage: `url("${A('assets/icons/user_check.svg')}")` }} aria-hidden="true" />
-                : <Icon name="plus" size={18} />}{following ? null : 'ติดตาม'}
+                : <Icon name="plus" size={14} className="ic-bold" />}{following ? null : 'ติดตาม'}
             </button>
           </div>
         </div>

@@ -296,7 +296,7 @@ function ShopBody({ app, b, web }) {
           <button className={`pf-btn ${following ? 'sh-follow-ic' : 'primary'}`} aria-pressed={following} aria-label={following ? 'กำลังติดตาม แตะเพื่อเลิกติดตาม' : 'ติดตาม'} onClick={follow}>
             {following
               ? <i className="o-ic" style={{ width: 18, height: 18, WebkitMaskImage: `url("${A('assets/icons/user_check.svg')}")`, maskImage: `url("${A('assets/icons/user_check.svg')}")` }} aria-hidden="true" />
-              : <Icon name="plus" size={18} />}{following ? null : 'ติดตาม'}
+              : <Icon name="plus" size={14} className="ic-bold" />}{following ? null : 'ติดตาม'}
           </button>
         </div>
       </div>

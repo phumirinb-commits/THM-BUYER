@@ -435,6 +435,7 @@ function CasePanel({ app }) {
     ['noAddress', 'ยังไม่มีที่อยู่จัดส่ง'],
     ['maxUnpaid', 'ค้างชำระครบ 5 คำสั่งซื้อ'],
     ['followReq', 'มีคำขอติดตาม'],
+    ['myStory', 'มีสตอรี่ของฉัน (ขอบแดง)'],
     ['savedCard', 'บันทึกบัตรไว้แล้ว'],
     ['manyCards', 'บันทึกไว้หลายบัตร'],
     ['affNone', 'ยังไม่สมัคร Affiliate'],
@@ -450,7 +451,7 @@ function CasePanel({ app }) {
           {rows.map(([k, label]) => (
             <label key={k} className="sw">
               <span>{label}</span>
-              <input type="checkbox" role="switch" checked={app.cases[k]} onChange={(e) => app.setCase(k, e.target.checked, k !== 'newUser' && k !== 'maxUnpaid' && k !== 'followReq' && k !== 'affNew' && k !== 'affNone' && k !== 'savedCard' && k !== 'manyCards' && k !== 'noAddress')} />
+              <input type="checkbox" role="switch" checked={app.cases[k]} onChange={(e) => app.setCase(k, e.target.checked, k !== 'newUser' && k !== 'maxUnpaid' && k !== 'followReq' && k !== 'myStory' && k !== 'affNew' && k !== 'affNone' && k !== 'savedCard' && k !== 'manyCards' && k !== 'noAddress')} />
               <i aria-hidden="true" />
             </label>
           ))}

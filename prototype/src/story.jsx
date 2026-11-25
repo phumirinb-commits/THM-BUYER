@@ -120,7 +120,7 @@ function StoryViewer({ app, index, web }) {
             <span>{fr.time}</span>
           </div>
           <button className={`lv-follow ${following ? 'on' : ''}`} aria-pressed={following} aria-label={following ? 'กำลังติดตาม แตะเพื่อเลิกติดตาม' : 'ติดตาม'} onClick={() => (app.cases.loggedIn ? setFollowing(!following) : app.login('ติดตามร้านนี้'))}>
-            {following ? <i className="o-ic" style={{ width: 18, height: 18, WebkitMaskImage: `url("${A('assets/icons/user_check.svg')}")`, maskImage: `url("${A('assets/icons/user_check.svg')}")` }} aria-hidden="true" /> : <><Icon name="plus" size={14} />ติดตาม</>}
+            {following ? <i className="o-ic" style={{ width: 18, height: 18, WebkitMaskImage: `url("${A('assets/icons/user_check.svg')}")`, maskImage: `url("${A('assets/icons/user_check.svg')}")` }} aria-hidden="true" /> : <><Icon name="plus" size={12} className="ic-bold" />ติดตาม</>}
           </button>
           <button className="st-ic" aria-label="ปิด" onClick={close}><Icon name="x" size={24} /></button>
         </div>

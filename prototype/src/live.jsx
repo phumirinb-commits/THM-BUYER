@@ -230,7 +230,7 @@ function LiveStage({ app, room, web, active = true }) {
             <span>ผู้ติดตาม {fmtCount(room.followers + (following ? 1 : 0))}</span>
           </div>
           <button className={`lv-follow round ${following ? 'on' : ''}`} aria-pressed={following} aria-label={following ? 'กำลังติดตาม แตะเพื่อเลิกติดตาม' : 'ติดตาม'} onClick={() => (app.cases.loggedIn ? setFollowing(!following) : app.login('ติดตามร้านนี้'))}>
-            {following ? <i className="o-ic" style={{ width: 18, height: 18, WebkitMaskImage: `url("${A('assets/icons/user_check.svg')}")`, maskImage: `url("${A('assets/icons/user_check.svg')}")` }} aria-hidden="true" /> : <><Icon name="plus" size={14} />ติดตาม</>}
+            {following ? <i className="o-ic" style={{ width: 18, height: 18, WebkitMaskImage: `url("${A('assets/icons/user_check.svg')}")`, maskImage: `url("${A('assets/icons/user_check.svg')}")` }} aria-hidden="true" /> : <><Icon name="plus" size={12} className="ic-bold" />ติดตาม</>}
           </button>
         </div>
         {/* Opened from the ไลฟ์ tab it is a main page (the tab bar is there), so no ✕. From a story ring or a post: ✕ goes back. */}

@@ -1,6 +1,6 @@
 // App shell: hash routes, preview cases, sheets, phone frame.
 
-const DEFAULT_CASES = { loggedIn: true, campaign: true, hasBrands: true, hasProducts: true, following: true, web: false, affNew: false, affNone: false, savedCard: true, manyCards: false, noAddress: false, newUser: true, maxUnpaid: false, followReq: true };
+const DEFAULT_CASES = { loggedIn: true, campaign: true, hasBrands: true, hasProducts: true, following: true, web: false, affNew: false, affNone: false, savedCard: true, manyCards: false, noAddress: false, newUser: true, maxUnpaid: false, followReq: true, myStory: false };
 
 /** Saved switches, then any ?web=1&campaign=0… in the link on top. */
 function readCases() {
